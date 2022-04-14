@@ -22,16 +22,17 @@ public partial class ParallelCreateEventEntities_SingleApplyToEntities_System : 
         if (GetSingleton<EventStressTest>().EventType != EventType.ParallelCreateEventEntities_SingleApplyToEntities)
             return;
 
+        EntityArchetype eventArchetype = EntityManager.CreateArchetype(typeof(DamageEventComp));
         EndSimulationEntityCommandBufferSystem ecbSystem = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
 
         EntityCommandBuffer.ParallelWriter createEventsECB = ecbSystem.CreateCommandBuffer().AsParallelWriter();
+
         Dependency = Entities.ForEach((Entity entity, int entityInQueryIndex, in Damager damager) =>
         {
-            Entity damageEventEntity = createEventsECB.CreateEntity(entityInQueryIndex);
-            createEventsECB.AddComponent(entityInQueryIndex, damageEventEntity, new DamageEventComp { Source = entity, Target = damager.Target, Damage = damager.Damage });
+            Entity damageEventEntity = createEventsECB.CreateEntity(entityInQueryIndex, eventArchetype);
+            createEventsECB.SetComponent(entityInQueryIndex, damageEventEntity, new DamageEventComp { Source = entity, Target = damager.Target, Damage = damager.Damage });
         }).ScheduleParallel(Dependency);
 
-        EntityCommandBuffer destroyEventsECB = ecbSystem.CreateCommandBuffer();
         Dependency = Entities.ForEach((Entity entity, in DamageEventComp damageEvent) =>
         {
             if(HasComponent<Health>(damageEvent.Target))
@@ -40,9 +41,27 @@ public partial class ParallelCreateEventEntities_SingleApplyToEntities_System : 
                 health.Value -= damageEvent.Damage;
                 SetComponent(damageEvent.Target, health);
             }
-            destroyEventsECB.DestroyEntity(entity);
         }).Schedule(Dependency);
 
         ecbSystem.AddJobHandleForProducer(Dependency);
+    }
+}
+
+[UpdateInGroup(typeof(SimulationSystemGroup), OrderLast = true)]
+[UpdateAfter(typeof(EndSimulationEntityCommandBufferSystem))]
+public struct DestroyEventEntitiesSystem : ISystem
+{
+    public void OnCreate(ref SystemState state)
+    {
+    }
+
+    public void OnDestroy(ref SystemState state)
+    {
+    }
+
+    public void OnUpdate(ref SystemState state)
+    {
+        EntityQuery eventsQuery = state.GetEntityQuery(typeof(DamageEventComp));
+        state.EntityManager.DestroyEntity(eventsQuery);
     }
 }

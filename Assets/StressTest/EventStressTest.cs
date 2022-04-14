@@ -15,7 +15,9 @@ public enum EventType
     ParallelCreateEventEntities_SingleApplyToEntities,
 
     ParallelWriteToStream_SinglePollList,
+
     ParallelWriteToStream_SinglePollHashMap,
+    ParallelWriteToStream_ParallelPollHashMap,
 }
 
 [Serializable]
@@ -23,8 +25,9 @@ public enum EventType
 public struct EventStressTest : IComponentData
 {
     public EventType EventType;
-    public Entity Prefab;
-    public int EntityCount;
+    public Entity HealthPrefab;
+    public Entity EntityDamageEventPrefab;
+    public int HealthEntityCount;
     public float Spacing;
 
     public int DamagersPerHealths;

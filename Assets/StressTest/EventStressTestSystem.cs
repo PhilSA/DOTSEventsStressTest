@@ -16,14 +16,14 @@ public partial class EventStressTestSystem : SystemBase
             .ForEach((Entity entity, ref EventStressTest spawner) =>
             {
                 Random random = Random.CreateFromIndex(1);
-                int spawnResolution = (int)math.ceil(math.sqrt(spawner.EntityCount));
+                int spawnResolution = (int)math.ceil(math.sqrt(spawner.HealthEntityCount));
 
                 int spawnCounter = 0;
                 for (int x = 0; x < spawnResolution; x++)
                 {
                     for (int y = 0; y < spawnResolution; y++)
                     {
-                        Entity spawnedPrefab = ecb.Instantiate(spawner.Prefab);
+                        Entity spawnedPrefab = ecb.Instantiate(spawner.HealthPrefab);
                         ecb.SetComponent(spawnedPrefab, new Translation { Value = new float3(x * spawner.Spacing, 0f, y * spawner.Spacing) });
 
                         for (int d = 0; d < spawner.DamagersPerHealths; d++)
@@ -33,13 +33,13 @@ public partial class EventStressTestSystem : SystemBase
                         }
 
                         spawnCounter++;
-                        if (spawnCounter >= spawner.EntityCount)
+                        if (spawnCounter >= spawner.HealthEntityCount)
                         {
                             break;
                         }
                     }
 
-                    if (spawnCounter >= spawner.EntityCount)
+                    if (spawnCounter >= spawner.HealthEntityCount)
                     {
                         break;
                     }

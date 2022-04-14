@@ -30,7 +30,7 @@ public unsafe struct ParallelApplyStreamEventsToEntitiesJob : IJobParallelFor
                 {
                     NativeArray<Health> chunkHealth = chunk.GetNativeArray(HealthType);
                     int* healthIntPtr = (int*)chunkHealth.GetUnsafePtr();
-                    healthIntPtr += storageInfo.IndexInChunk * UnsafeUtility.SizeOf<Health>();
+                    healthIntPtr += storageInfo.IndexInChunk;
                     Interlocked.Add(ref UnsafeUtility.AsRef<int>(healthIntPtr), -1);
                 }
             }
