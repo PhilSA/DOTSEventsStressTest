@@ -13,6 +13,9 @@ public enum EventType
     ParallelWriteToStream_ParallelApplyToEntities,
 
     ParallelCreateEventEntities_SingleApplyToEntities,
+
+    ParallelWriteToStream_SinglePollList,
+    ParallelWriteToStream_SinglePollHashMap,
 }
 
 [Serializable]
