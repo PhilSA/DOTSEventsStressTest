@@ -35,7 +35,7 @@ public struct SinglePollDamageEventHashMapJob : IJob
 
 
 [BurstCompile]
-public struct ParallelPollDamageEventHashMapJob : IJobParallelForBatch
+public struct ParallelPollDamageEventHashMapJob : IJobParallelFor
 {
     [ReadOnly]
     public EntityTypeHandle EntityType;
@@ -44,9 +44,9 @@ public struct ParallelPollDamageEventHashMapJob : IJobParallelForBatch
     [NativeDisableParallelForRestriction]
     public ComponentDataFromEntity<Health> HealthFromEntity;
 
-    public int ParallelCount;
+    public int ThreadCount;
 
-    public unsafe void Execute(int startIndex, int count)
+    public unsafe void Execute(int index)
     {
         UnsafeHashMapBucketData bucketData = DamageEventsMap.GetUnsafeBucketData();
         int* buckets = (int*)bucketData.buckets;
@@ -54,7 +54,11 @@ public struct ParallelPollDamageEventHashMapJob : IJobParallelForBatch
         byte* keys = bucketData.keys;
         byte* values = bucketData.values;
 
-        for (int i = startIndex; i < startIndex + count; i++)
+        int elementsCountInMap = DamageEventsMap.Count();
+        int startIndex = (index * ThreadCount);
+        int countPerThread = (int)math.ceil((float)elementsCountInMap / (float)ThreadCount);
+
+        for (int i = startIndex; i < math.min(elementsCountInMap, startIndex + countPerThread); i++)
         {
             int entryIndex = buckets[i];
             while (entryIndex != -1)

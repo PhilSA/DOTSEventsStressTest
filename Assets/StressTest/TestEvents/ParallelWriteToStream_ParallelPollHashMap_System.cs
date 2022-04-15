@@ -58,12 +58,14 @@ public partial class ParallelWriteToStream_ParallelPollHashMap_System : SystemBa
             DamageEventsMap = DamageEventsMap,
         }.Schedule(Dependency);
 
-        Dependency = new SinglePollDamageEventHashMapJob
+        int threadCount = 16;
+        Dependency = new ParallelPollDamageEventHashMapJob
         {
             EntityType = GetEntityTypeHandle(),
             DamageEventsMap = DamageEventsMap,
             HealthFromEntity = GetComponentDataFromEntity<Health>(false),
-        }.Schedule(Dependency);
+            ThreadCount = threadCount,
+        }.Schedule(threadCount, 1, Dependency);
 
         Dependency = new ClearDamageEventHashMapJob
         {

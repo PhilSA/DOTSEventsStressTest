@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13d43e0338b52a49bcf69b46bbc3510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EventType: 7
+  EventType: 9
   HealthPrefab: {fileID: 1426645702674376967, guid: da10ed77b519af5498cd44dd278809ca, type: 3}
   HealthEntityCount: 500000
   Spacing: 1
-  DamagersPerHealths: 3
+  DamagersPerHealths: 1
 --- !u!4 &531615837
 Transform:
   m_ObjectHideFlags: 0
