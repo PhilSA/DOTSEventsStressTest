@@ -5,6 +5,8 @@ using Unity.Mathematics;
 
 public enum EventType
 {
+    None,
+
     ParallelWriteToStream_ParallelPollBuffers,
     SingleWriteToBuffers_ParallelPollBuffers,
     ParallelWriteToBuffersECB_ParallelPollBuffers,
@@ -26,7 +28,6 @@ public struct EventStressTest : IComponentData
 {
     public EventType EventType;
     public Entity HealthPrefab;
-    public Entity EntityDamageEventPrefab;
     public int HealthEntityCount;
     public float Spacing;
 
