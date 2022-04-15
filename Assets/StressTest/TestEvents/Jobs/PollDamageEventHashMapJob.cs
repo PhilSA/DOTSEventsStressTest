@@ -38,8 +38,6 @@ public struct SinglePollDamageEventHashMapJob : IJob
 public struct ParallelPollDamageEventHashMapJob : IJobParallelFor
 {
     [ReadOnly]
-    public EntityTypeHandle EntityType;
-    [ReadOnly]
     public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;
     [NativeDisableParallelForRestriction]
     public ComponentDataFromEntity<Health> HealthFromEntity;

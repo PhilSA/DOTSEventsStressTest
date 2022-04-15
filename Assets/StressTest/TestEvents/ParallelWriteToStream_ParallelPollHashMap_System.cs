@@ -61,7 +61,6 @@ public partial class ParallelWriteToStream_ParallelPollHashMap_System : SystemBa
         int threadCount = 16;
         Dependency = new ParallelPollDamageEventHashMapJob
         {
-            EntityType = GetEntityTypeHandle(),
             DamageEventsMap = DamageEventsMap,
             HealthFromEntity = GetComponentDataFromEntity<Health>(false),
             ThreadCount = threadCount,
