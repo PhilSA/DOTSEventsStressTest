@@ -9,6 +9,6 @@ public class TestDamager : MonoBehaviour
 
     void Update()
     {
-        Target.Health -= Damage;
+        Target.ApplyDamage(Damage);
     }
 }
