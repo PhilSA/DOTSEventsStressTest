@@ -7,6 +7,7 @@ using Unity.Transforms;
 
 [AlwaysUpdateSystem]
 [AlwaysSynchronizeSystem]
+[UpdateInGroup(typeof(SimulationSystemGroup), OrderLast = true)]
 public partial class EventStressTestSystem : SystemBase
 {
     protected override void OnUpdate()
