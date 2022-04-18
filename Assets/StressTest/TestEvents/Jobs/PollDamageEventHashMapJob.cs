@@ -19,16 +19,19 @@ public struct SinglePollDamageEventHashMapJob : IJob
 
     public void Execute()
     {
-        var enumerator = DamageEventsMap.GetEnumerator();
-        while(enumerator.MoveNext())
+        if (DamageEventsMap.Count() > 0)
         {
-            Entity targetEntity = enumerator.Current.Key;
-            DamageEvent damageEvent = enumerator.Current.Value;
-            if (HealthFromEntity.HasComponent(targetEntity))
+            var enumerator = DamageEventsMap.GetEnumerator();
+            while (enumerator.MoveNext())
             {
-                Health health = HealthFromEntity[targetEntity];
-                health.Value -= damageEvent.Value;
-                HealthFromEntity[targetEntity] = health;
+                Entity targetEntity = enumerator.Current.Key;
+                DamageEvent damageEvent = enumerator.Current.Value;
+                if (HealthFromEntity.HasComponent(targetEntity))
+                {
+                    Health health = HealthFromEntity[targetEntity];
+                    health.Value -= damageEvent.Value;
+                    HealthFromEntity[targetEntity] = health;
+                }
             }
         }
     }
@@ -59,6 +62,9 @@ public struct ClearDamageEventHashMapJob : IJob
 
     public void Execute()
     {
-        DamageEventsMap.Clear();
+        if (DamageEventsMap.Count() > 0)
+        {
+            DamageEventsMap.Clear();
+        }
     }
 }

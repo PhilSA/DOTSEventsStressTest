@@ -19,7 +19,7 @@ public partial class ParallelCreateEventEntities_SingleApplyToEntities_System : 
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelCreateEventEntities_SingleApplyToEntities)
+        if (GetSingleton<EventStressTest>().EventType != EventType.F_ParallelCreateEventEntities_SingleApplyToEntities)
             return;
 
         EntityArchetype eventArchetype = EntityManager.CreateArchetype(typeof(DamageEventComp));

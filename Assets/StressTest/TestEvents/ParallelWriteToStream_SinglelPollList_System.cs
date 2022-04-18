@@ -34,7 +34,7 @@ public partial class ParallelWriteToStream_SinglelPollList_System : SystemBase
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelWriteToStream_SinglePollList)
+        if (GetSingleton<EventStressTest>().EventType != EventType.G_ParallelWriteToStream_SinglePollList)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));

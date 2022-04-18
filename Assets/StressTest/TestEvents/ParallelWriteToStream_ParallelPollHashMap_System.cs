@@ -34,7 +34,7 @@ public partial class ParallelWriteToStream_ParallelPollHashMap_System : SystemBa
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelWriteToStream_ParallelPollHashMap)
+        if (GetSingleton<EventStressTest>().EventType != EventType.I_ParallelWriteToStream_ParallelPollHashMap)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));

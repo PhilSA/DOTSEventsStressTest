@@ -235,8 +235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fcc56fff249f440ade1c91d2365b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPrefab: {fileID: 6667722409156007695, guid: 3f0fda8189b166c46a7d837a744245ec, type: 3}
-  DamagerPrefab: {fileID: 9147403129590496361, guid: ecb147aadf73f994cb54a79a0f9e4618, type: 3}
+  UseMonobehaviourUpdate: 0
+  HealthPrefabRegular: {fileID: 6667722409156007695, guid: 3f0fda8189b166c46a7d837a744245ec, type: 3}
+  DamagerPrefabRegular: {fileID: 9147403129590496361, guid: ecb147aadf73f994cb54a79a0f9e4618, type: 3}
+  HealthPrefabManual: {fileID: 6667722409156007695, guid: 9b5f20ac40c18994fab833397a42e96a, type: 3}
+  DamagerPrefabManual: {fileID: 9147403129590496361, guid: ea16f7152ad748a43b73661550d3c0bf, type: 3}
   HealthEntityCount: 500000
   Spacing: 1
   DamagersPerHealths: 1

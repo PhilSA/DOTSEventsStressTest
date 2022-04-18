@@ -23,7 +23,7 @@ public partial class ParallelWriteToStream_SingleApplyToEntities_System : System
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelWriteToStream_SingleApplyToEntities)
+        if (GetSingleton<EventStressTest>().EventType != EventType.D_ParallelWriteToStream_SingleApplyToEntities)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));

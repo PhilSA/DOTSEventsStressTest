@@ -12,7 +12,7 @@ public partial class ParallelWriteToBuffersECB_ParallelPollBuffers_System : Syst
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelWriteToBuffersECB_ParallelPollBuffers)
+        if (GetSingleton<EventStressTest>().EventType != EventType.C_ParallelWriteToBuffersECB_ParallelPollBuffers)
             return;
 
         EntityQuery healthsQuery = GetEntityQuery(typeof(Health), typeof(DamageEvent));

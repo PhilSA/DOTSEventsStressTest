@@ -23,7 +23,7 @@ public partial class ParallelWriteToStream_ParallelPollBuffers_System : SystemBa
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.ParallelWriteToStream_ParallelPollBuffers)
+        if (GetSingleton<EventStressTest>().EventType != EventType.A_ParallelWriteToStream_ParallelPollBuffers)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));

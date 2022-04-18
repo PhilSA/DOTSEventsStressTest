@@ -7,19 +7,21 @@ public enum EventType
 {
     None,
 
-    ParallelWriteToStream_ParallelPollBuffers,
-    SingleWriteToBuffers_ParallelPollBuffers,
-    ParallelWriteToBuffersECB_ParallelPollBuffers,
+    A_ParallelWriteToStream_ParallelPollBuffers,
+    B_SingleWriteToBuffers_ParallelPollBuffers,
+    C_ParallelWriteToBuffersECB_ParallelPollBuffers,
 
-    ParallelWriteToStream_SingleApplyToEntities,
-    ParallelWriteToStream_ParallelApplyToEntities,
+    D_ParallelWriteToStream_SingleApplyToEntities,
+    E_ParallelWriteToStream_ParallelApplyToEntities,
 
-    ParallelCreateEventEntities_SingleApplyToEntities,
+    F_ParallelCreateEventEntities_SingleApplyToEntities,
 
-    ParallelWriteToStream_SinglePollList,
+    G_ParallelWriteToStream_SinglePollList,
 
-    ParallelWriteToStream_SinglePollHashMap,
-    ParallelWriteToStream_ParallelPollHashMap,
+    H_ParallelWriteToStream_SinglePollHashMap,
+    I_ParallelWriteToStream_ParallelPollHashMap,
+
+    J_SingleDirectModification,
 }
 
 [Serializable]
