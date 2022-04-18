@@ -52,11 +52,17 @@ public partial class ParallelWriteToStream_SinglePollHashMap_System : SystemBase
             StreamDamageEvents = PendingStream.AsWriter(),
         }.ScheduleParallel(damagersQuery, Dependency);
 
-        Dependency = new WriteStreamEventsToHashMapJob
+        Dependency = new EnsureHashMapCapacityJob
         {
             StreamDamageEvents = PendingStream.AsReader(),
             DamageEventsMap = DamageEventsMap,
         }.Schedule(Dependency);
+
+        Dependency = new WriteStreamEventsToHashMapJob
+        {
+            StreamDamageEvents = PendingStream.AsReader(),
+            DamageEventsMap = DamageEventsMap.AsParallelWriter(),
+        }.Schedule(damagersQuery.CalculateChunkCount(), 1, Dependency);
 
         Dependency = new SinglePollDamageEventHashMapJob
         {

@@ -5,10 +5,14 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
+[AlwaysUpdateSystem]
+[AlwaysSynchronizeSystem]
 public partial class EventStressTestSystem : SystemBase
 {
     protected override void OnUpdate()
     {
+        EntityManager.CompleteAllJobs();
+
         EntityCommandBuffer ecb = new EntityCommandBuffer(Allocator.Temp);
 
         Entities
@@ -50,5 +54,6 @@ public partial class EventStressTestSystem : SystemBase
 
         ecb.Playback(EntityManager);
         ecb.Dispose();
+
     }
 }
