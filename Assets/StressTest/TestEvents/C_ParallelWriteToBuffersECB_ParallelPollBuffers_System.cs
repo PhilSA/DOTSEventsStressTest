@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-public partial class ParallelWriteToBuffersECB_ParallelPollBuffers_System : SystemBase
+public partial class C_ParallelWriteToBuffersECB_ParallelPollBuffers_System : SystemBase
 {
     protected override void OnUpdate()
     {

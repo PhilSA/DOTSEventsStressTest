@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-public partial class ParallelWriteToStream_ParallelPollBuffers_System : SystemBase
+public partial class A_ParallelWriteToStream_ParallelPollBuffers_System : SystemBase
 {
     public NativeStream PendingStream;
 

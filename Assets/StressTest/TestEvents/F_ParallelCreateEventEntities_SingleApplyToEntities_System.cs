@@ -12,7 +12,7 @@ public struct DamageEventComp : IComponentData
     public float Damage;
 }
 
-public partial class ParallelCreateEventEntities_SingleApplyToEntities_System : SystemBase
+public partial class F_ParallelCreateEventEntities_SingleApplyToEntities_System : SystemBase
 {
     protected override void OnUpdate()
     {

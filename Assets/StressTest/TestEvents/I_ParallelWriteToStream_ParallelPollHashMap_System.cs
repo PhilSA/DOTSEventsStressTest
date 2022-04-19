@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-public partial class ParallelWriteToStream_SinglePollHashMap_System : SystemBase
+public partial class I_ParallelWriteToStream_ParallelPollHashMap_System : SystemBase
 {
     public NativeStream PendingStream;
     public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;
@@ -34,7 +34,7 @@ public partial class ParallelWriteToStream_SinglePollHashMap_System : SystemBase
         if (!HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.H_ParallelWriteToStream_SinglePollHashMap)
+        if (GetSingleton<EventStressTest>().EventType != EventType.I_ParallelWriteToStream_ParallelPollHashMap)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -52,24 +52,30 @@ public partial class ParallelWriteToStream_SinglePollHashMap_System : SystemBase
             StreamDamageEvents = PendingStream.AsWriter(),
         }.ScheduleParallel(damagersQuery, Dependency);
 
-        Dependency = new EnsureHashMapCapacityJob
+
+
+        Dependency = new SingleWriteStreamEventsToHashMapJob
         {
             StreamDamageEvents = PendingStream.AsReader(),
             DamageEventsMap = DamageEventsMap,
         }.Schedule(Dependency);
 
-        Dependency = new WriteStreamEventsToHashMapJob
-        {
-            StreamDamageEvents = PendingStream.AsReader(),
-            DamageEventsMap = DamageEventsMap.AsParallelWriter(),
-        }.Schedule(damagersQuery.CalculateChunkCount(), 1, Dependency);
+        //Dependency = new EnsureHashMapCapacityJob
+        //{
+        //    StreamDamageEvents = PendingStream.AsReader(),
+        //    DamageEventsMap = DamageEventsMap,
+        //}.Schedule(Dependency);
 
-        Dependency = new SinglePollDamageEventHashMapJob
+        //Dependency = new ParallelWriteStreamEventsToHashMapJob
+        //{
+        //    StreamDamageEvents = PendingStream.AsReader(),
+        //    DamageEventsMap = DamageEventsMap.AsParallelWriter(),
+        //}.Schedule(damagersQuery.CalculateChunkCount(), 1, Dependency);
+
+        Dependency = new ParallelPollDamageEventHashMapJob
         {
-            EntityType = GetEntityTypeHandle(),
-            DamageEventsMap = DamageEventsMap,
             HealthFromEntity = GetComponentDataFromEntity<Health>(false),
-        }.Schedule(Dependency);
+        }.ScheduleParallel(DamageEventsMap, 1000, Dependency);
 
         Dependency = new ClearDamageEventHashMapJob
         {
