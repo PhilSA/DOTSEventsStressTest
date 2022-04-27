@@ -22,6 +22,7 @@ public class RuntimeTests : ECSTestsFixture
 	private readonly int _entityCount = 500000;
 	private readonly float _spacing = 1f;
 	private readonly int _damagers = 1;
+	private readonly float _healthValue = 1000f;
 
 	private void MeasureWorldUpdate(EventType eventType)
 	{
@@ -30,7 +31,7 @@ public class RuntimeTests : ECSTestsFixture
 		// I add the systems from the Archetypes listed for HealthPrefab in play mode as well as the conversion code.
 		// Should be identical but it's kind of hard to use the DOTS windows while tests are running whereas with breakpoints the UI is frozen.
 		var healthPrefab = m_Manager.CreateEntity(typeof(LocalToWorld), typeof(Translation), typeof(Rotation), typeof(Health), typeof(Prefab));
-		m_Manager.AddComponentData(healthPrefab, new Health { Value = 1000f });
+		m_Manager.AddComponentData(healthPrefab, new Health { Value = _healthValue });
 		m_Manager.AddBuffer<DamageEvent>(healthPrefab);
 
 		// we need this to spawn all the entities during the first world update
