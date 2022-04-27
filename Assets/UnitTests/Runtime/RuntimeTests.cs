@@ -14,7 +14,8 @@ using Unity.Transforms;
 /// - With Burst compilation disabled, performance (and testing time) is 10 times slower! (12-core CPU)
 /// - Jobs => Burst => Safety Checks => Off ... affects some tests more than others! This should be considered in summary.
 /// - Jobs => Jobs Debugger ... has practically no effect on measurements
-/// - Jobs => Use Job Threads ... as expected: hardly affects "Single" tests, if "off" makes companion Single/Parallel tests perform about the same 
+/// - Jobs => Use Job Threads ... as expected: hardly affects "Single" tests, if "off" makes companion Single/Parallel tests perform about the same
+/// - [BurstCompile(OptimizeFor = OptimizeFor.Performance)] ... some tests benefit from this, between 0.5-1.0 ms faster (A, D, G, H, I) 
 /// </summary>
 public class RuntimeTests : ECSTestsFixture
 {

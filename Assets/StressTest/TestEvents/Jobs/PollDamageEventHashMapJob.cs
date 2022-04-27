@@ -7,7 +7,7 @@ using Unity.Jobs.LowLevel.Unsafe;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct SinglePollDamageEventHashMapJob : IJob
 {
     [ReadOnly]
@@ -38,7 +38,7 @@ public struct SinglePollDamageEventHashMapJob : IJob
 }
 
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct ParallelPollDamageEventHashMapJob : IJobNativeMultiHashMapVisitKeyValue<Entity, DamageEvent>
 {
     [NativeDisableParallelForRestriction]
@@ -55,7 +55,7 @@ public struct ParallelPollDamageEventHashMapJob : IJobNativeMultiHashMapVisitKey
     }
 }
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct ClearDamageEventHashMapJob : IJob
 {
     public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;

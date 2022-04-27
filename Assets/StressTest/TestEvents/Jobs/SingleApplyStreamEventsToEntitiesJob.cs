@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct SingleApplyStreamEventsToEntitiesJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;

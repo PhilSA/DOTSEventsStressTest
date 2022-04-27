@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct DamagersWriteToStreamJob : IJobEntityBatch
 {
     [ReadOnly]
