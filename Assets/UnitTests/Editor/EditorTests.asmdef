@@ -9,7 +9,9 @@
         "TestHelper",
         "StressTest",
         "Unity.Collections",
-        "Unity.Transforms"
+        "Unity.Transforms",
+        "RuntimeTests",
+        "ECSTestsFixture"
     ],
     "includePlatforms": [
         "Editor"

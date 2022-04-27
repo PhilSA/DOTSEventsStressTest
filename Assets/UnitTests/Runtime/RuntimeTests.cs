@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using TestHelper;
 using Unity.Entities;
 using Unity.PerformanceTesting;
 using Unity.Transforms;
@@ -7,11 +6,17 @@ using Unity.Transforms;
 /// <summary>
 /// To run performance measurements:
 /// - open StressTest scene
-/// - open: Window => Analysis => Performance Test Report
+/// - open: Window => Analysis => Performance Test Report (and enable "Auto Refresh")
 /// - open: Window => General => Test Runner
-/// Run tests in Test Runner. Then check Performance Test Report window.
+/// Run tests in Test Runner. Then check Performance Test Report window or the saved TestResults.xml (see Console).
+/// 
+/// Observations:
+/// - With Burst compilation disabled, performance (and testing time) is 10 times slower! (12-core CPU)
+/// - Jobs => Burst => Safety Checks => Off ... affects some tests more than others! This should be considered in summary.
+/// - Jobs => Jobs Debugger ... has practically no effect on measurements
+/// - Jobs => Use Job Threads ... as expected: hardly affects "Single" tests, if "off" makes companion Single/Parallel tests perform about the same 
 /// </summary>
-public class EditorEventStressTests : ECSTestsFixture
+public class RuntimeTests : ECSTestsFixture
 {
 	// TODO: move these into a ScriptableObject for easier/faster value tweaking
 	private readonly int _entityCount = 500000;

@@ -1,19 +1,22 @@
 {
-    "name": "RuntimeTests",
+    "name": "ECSTestsFixture",
     "rootNamespace": "",
     "references": [
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
-        "Unity.PerformanceTesting",
         "Unity.Entities",
-        "StressTest",
         "Unity.Collections",
+        "Unity.Jobs",
+        "Unity.Burst",
+        "Unity.Mathematics",
         "Unity.Transforms",
-        "ECSTestsFixture"
+        "Unity.Collections.BurstCompatibilityGen",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": true,
     "precompiledReferences": [
         "nunit.framework.dll"
