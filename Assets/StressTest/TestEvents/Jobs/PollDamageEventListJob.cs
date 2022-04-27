@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct SinglePollDamageEventListJob : IJob
 {
     [ReadOnly]
@@ -29,7 +29,7 @@ public struct SinglePollDamageEventListJob : IJob
     }
 }
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct ClearDamageEventListJob : IJob
 {
     public NativeList<StreamDamageEvent> DamageEventsList;

@@ -7,7 +7,7 @@ using Unity.Transforms;
 
 
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct EnsureHashMapCapacityJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
@@ -29,7 +29,7 @@ public struct EnsureHashMapCapacityJob : IJob
     }
 }
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct SingleWriteStreamEventsToHashMapJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
@@ -50,7 +50,7 @@ public struct SingleWriteStreamEventsToHashMapJob : IJob
     }
 }
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct ParallelWriteStreamEventsToHashMapJob : IJobParallelFor
 {
     public NativeStream.Reader StreamDamageEvents;

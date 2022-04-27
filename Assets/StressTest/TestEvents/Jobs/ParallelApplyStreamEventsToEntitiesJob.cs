@@ -9,7 +9,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public unsafe struct ParallelApplyStreamEventsToEntitiesJob : IJobParallelFor
 {
     public NativeStream.Reader StreamDamageEvents;

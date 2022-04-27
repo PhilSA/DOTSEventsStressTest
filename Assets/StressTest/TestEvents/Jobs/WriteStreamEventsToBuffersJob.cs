@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 
 
-[BurstCompile]
+[BurstCompile(OptimizeFor = OptimizeFor.Performance)]
 public struct WriteStreamEventsToBuffersJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
