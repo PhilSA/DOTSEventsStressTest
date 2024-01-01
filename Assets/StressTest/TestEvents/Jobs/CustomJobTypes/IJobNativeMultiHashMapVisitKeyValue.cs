@@ -17,12 +17,12 @@ public static class JobNativeMultiHashMapVisitKeyValue
 {
     public static unsafe JobHandle ScheduleParallel<TJob, TKey, TValue>(
         this TJob jobData,
-        NativeMultiHashMap<TKey, TValue> hashMap,
+        NativeParallelMultiHashMap<TKey, TValue> hashMap,
         int minIndicesPerJobCount,
         JobHandle dependsOn = default)
         where TJob : struct, IJobNativeMultiHashMapVisitKeyValue<TKey, TValue>
-        where TKey : struct, IEquatable<TKey>
-        where TValue : struct
+        where TKey : unmanaged, IEquatable<TKey>
+        where TValue : unmanaged
     {
         var jobProducer = new JobNativeMultiHashMapVisitKeyValueProducer<TJob, TKey, TValue>
         {
@@ -41,11 +41,11 @@ public static class JobNativeMultiHashMapVisitKeyValue
 
     internal struct JobNativeMultiHashMapVisitKeyValueProducer<TJob, TKey, TValue>
         where TJob : struct, IJobNativeMultiHashMapVisitKeyValue<TKey, TValue>
-        where TKey : struct, IEquatable<TKey>
-        where TValue : struct
+        where TKey : unmanaged, IEquatable<TKey>
+        where TValue : unmanaged
     {
         [ReadOnly]
-        public NativeMultiHashMap<TKey, TValue> HashMap;
+        public NativeParallelMultiHashMap<TKey, TValue> HashMap;
 
         internal TJob JobData;
 
@@ -85,7 +85,7 @@ public static class JobNativeMultiHashMapVisitKeyValue
                     return;
                 }
 
-                UnsafeHashMapBucketData bucketData = fullData.HashMap.GetUnsafeBucketData();
+                UnsafeParallelHashMapBucketData bucketData = fullData.HashMap.GetUnsafeBucketData();
                 int* buckets = (int*)bucketData.buckets;
                 int* nextPtrs = (int*)bucketData.next;
                 byte* keys = bucketData.keys;

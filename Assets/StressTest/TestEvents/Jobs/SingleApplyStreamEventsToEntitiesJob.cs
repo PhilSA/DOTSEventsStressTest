@@ -9,7 +9,7 @@ using Unity.Transforms;
 public struct SingleApplyStreamEventsToEntitiesJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
-    public ComponentDataFromEntity<Health> HealthFromEntity;
+    public ComponentLookup<Health> HealthFromEntity;
 
     public void Execute()
     {

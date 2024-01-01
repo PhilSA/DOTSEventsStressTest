@@ -20,10 +20,10 @@ public partial class D_ParallelWriteToStream_SingleApplyToEntities_System : Syst
 
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.D_ParallelWriteToStream_SingleApplyToEntities)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.D_ParallelWriteToStream_SingleApplyToEntities)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -44,7 +44,7 @@ public partial class D_ParallelWriteToStream_SingleApplyToEntities_System : Syst
         Dependency = new SingleApplyStreamEventsToEntitiesJob
         {
             StreamDamageEvents = PendingStream.AsReader(),
-            HealthFromEntity = GetComponentDataFromEntity<Health>(false),
+            HealthFromEntity = GetComponentLookup<Health>(false),
         }.Schedule(Dependency);
     }
 }

@@ -31,7 +31,7 @@ public class RuntimeTests : ECSTestsFixture
 		// NOTE: I found it difficult to verify whether this is 100% identical to the scene's Health prefab entity after conversion.
 		// I add the systems from the Archetypes listed for HealthPrefab in play mode as well as the conversion code.
 		// Should be identical but it's kind of hard to use the DOTS windows while tests are running whereas with breakpoints the UI is frozen.
-		var healthPrefab = m_Manager.CreateEntity(typeof(LocalToWorld), typeof(Translation), typeof(Rotation), typeof(Health), typeof(Prefab));
+		var healthPrefab = m_Manager.CreateEntity(typeof(LocalToWorld), typeof(LocalTransform), typeof(Health), typeof(Prefab));
 		m_Manager.AddComponentData(healthPrefab, new Health { Value = _healthValue });
 		m_Manager.AddBuffer<DamageEvent>(healthPrefab);
 
@@ -46,7 +46,7 @@ public class RuntimeTests : ECSTestsFixture
 
 				// this did not seem to affect measurements (by much) but it's better to be safe,
 				// we don't want any jobs to continue running past the measurement cycle
-				m_Manager.CompleteAllJobs();
+				m_Manager.CompleteAllTrackedJobs();
 			})
 			// First update creates gazillion entities, don't measure this... (actually: could call Update outside Measure once)
 			// Second update seems generally unstable, skip that too ...

@@ -8,12 +8,12 @@ using Unity.Transforms;
 public partial class I_ParallelWriteToStream_ParallelPollHashMap_System : SystemBase
 {
     public NativeStream PendingStream;
-    public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;
+    public NativeParallelMultiHashMap<Entity, DamageEvent> DamageEventsMap;
 
     protected override void OnCreate()
     {
         base.OnCreate();
-        DamageEventsMap = new NativeMultiHashMap<Entity, DamageEvent>(500000, Allocator.Persistent);
+        DamageEventsMap = new NativeParallelMultiHashMap<Entity, DamageEvent>(500000, Allocator.Persistent);
     }
 
     protected override void OnDestroy()
@@ -31,10 +31,10 @@ public partial class I_ParallelWriteToStream_ParallelPollHashMap_System : System
 
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.I_ParallelWriteToStream_ParallelPollHashMap)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.I_ParallelWriteToStream_ParallelPollHashMap)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -74,7 +74,7 @@ public partial class I_ParallelWriteToStream_ParallelPollHashMap_System : System
 
         Dependency = new ParallelPollDamageEventHashMapJob
         {
-            HealthFromEntity = GetComponentDataFromEntity<Health>(false),
+            HealthFromEntity = GetComponentLookup<Health>(false),
         }.ScheduleParallel(DamageEventsMap, 1000, Dependency);
 
         Dependency = new ClearDamageEventHashMapJob
@@ -83,4 +83,3 @@ public partial class I_ParallelWriteToStream_ParallelPollHashMap_System : System
         }.Schedule(Dependency);
     }
 }
-

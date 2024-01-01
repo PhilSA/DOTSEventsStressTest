@@ -1,11 +1,12 @@
 using System;
 using Unity.Burst;
+using Unity.Burst.Intrinsics;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 
 [BurstCompile(OptimizeFor = OptimizeFor.Performance)]
-public struct DamagersWriteToStreamJob : IJobEntityBatch
+public struct DamagersWriteToStreamJob : IJobChunk
 {
     [ReadOnly]
     public EntityTypeHandle EntityType;
@@ -14,14 +15,14 @@ public struct DamagersWriteToStreamJob : IJobEntityBatch
     [NativeDisableParallelForRestriction]
     public NativeStream.Writer StreamDamageEvents;
 
-    public void Execute(ArchetypeChunk batchInChunk, int batchIndex)
+    public void Execute(in ArchetypeChunk chunk, int unfilteredChunkIndex, Boolean useEnabledMask, in v128 chunkEnabledMask)
     {
-        NativeArray<Entity> chunkEntity = batchInChunk.GetNativeArray(EntityType);
-        NativeArray<Damager> chunkDamager = batchInChunk.GetNativeArray(DamagerType);
+        NativeArray<Entity> chunkEntity = chunk.GetNativeArray(EntityType);
+        NativeArray<Damager> chunkDamager = chunk.GetNativeArray(ref DamagerType);
 
-        StreamDamageEvents.BeginForEachIndex(batchIndex);
+        StreamDamageEvents.BeginForEachIndex(unfilteredChunkIndex);
 
-        for (int i = 0; i < batchInChunk.Count; i++)
+        for (int i = 0; i < chunk.Count; i++)
         {
             Entity entity = chunkEntity[i];
             Damager damager = chunkDamager[i];

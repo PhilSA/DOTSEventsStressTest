@@ -20,10 +20,10 @@ public partial class A_ParallelWriteToStream_ParallelPollBuffers_System : System
 
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.A_ParallelWriteToStream_ParallelPollBuffers)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.A_ParallelWriteToStream_ParallelPollBuffers)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -46,7 +46,7 @@ public partial class A_ParallelWriteToStream_ParallelPollBuffers_System : System
         Dependency = new WriteStreamEventsToBuffersJob
         {
             StreamDamageEvents = PendingStream.AsReader(),
-            DamageEventBufferFromEntity = GetBufferFromEntity<DamageEvent>(false),
+            DamageEventBufferFromEntity = GetBufferLookup<DamageEvent>(false),
         }.Schedule(Dependency);
 
         Dependency = new PollDamageEventBuffersJob

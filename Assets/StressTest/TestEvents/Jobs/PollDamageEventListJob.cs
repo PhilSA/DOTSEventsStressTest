@@ -12,7 +12,7 @@ public struct SinglePollDamageEventListJob : IJob
     public EntityTypeHandle EntityType;
     [ReadOnly]
     public NativeList<StreamDamageEvent> DamageEventsList;
-    public ComponentDataFromEntity<Health> HealthFromEntity;
+    public ComponentLookup<Health> HealthFromEntity;
 
     public void Execute()
     {
