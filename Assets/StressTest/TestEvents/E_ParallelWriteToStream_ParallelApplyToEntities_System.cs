@@ -32,7 +32,9 @@ public partial class E_ParallelWriteToStream_ParallelApplyToEntities_System : Sy
         {
             PendingStream.Dispose();
         }
-        PendingStream = new NativeStream(damagersQuery.CalculateChunkCount(), Allocator.TempJob);
+
+        var chunkCount = damagersQuery.CalculateChunkCount();
+        PendingStream = new NativeStream(chunkCount, Allocator.TempJob);
 
         Dependency = new DamagersWriteToStreamJob
         {
@@ -46,6 +48,6 @@ public partial class E_ParallelWriteToStream_ParallelApplyToEntities_System : Sy
             StreamDamageEvents = PendingStream.AsReader(),
             StorageInfoFromEntity = GetEntityStorageInfoLookup(),
             HealthType = GetComponentTypeHandle<Health>(false),
-        }.Schedule(damagersQuery.CalculateChunkCount(), 1, Dependency);
+        }.Schedule(chunkCount, 8, Dependency);
     }
 }
