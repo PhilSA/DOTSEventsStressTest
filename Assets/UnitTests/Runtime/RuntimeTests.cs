@@ -53,7 +53,8 @@ public class RuntimeTests : ECSTestsFixture
 			// From third run onwards measurements are stable ...
 			.WarmupCount(2)
 			// 10 seems enough to get a decently low deviation
-			.MeasurementCount(10)
+			//.MeasurementCount(10)
+			.DynamicMeasurementCount()
 			// only measure once to keep numbers comparable to original forum post
 			.IterationsPerMeasurement(1)
 			.Run();

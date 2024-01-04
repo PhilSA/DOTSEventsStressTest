@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
+    x: 1
     y: 51
-    width: 2684
-    height: 1381
+    width: 2700
+    height: 1388
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Test Runner
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -40,11 +40,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 637
-    width: 826
-    height: 694
-  m_MinSize: {x: 641, y: 501}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 638
+    width: 833
+    height: 700
+  m_MinSize: {x: 640, y: 480}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -67,10 +67,10 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 1858
+    x: 1867
     y: 0
-    width: 826
-    height: 1331
+    width: 833
+    height: 1338
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
@@ -93,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2684
-    height: 1331
+    width: 2700
+    height: 1338
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
@@ -119,8 +119,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2684
-    height: 1381
+    width: 2700
+    height: 1388
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -144,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2684
+    width: 2700
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -165,8 +165,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1361
-    width: 2684
+    y: 1368
+    width: 2700
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -190,8 +190,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2684
-    height: 1331
+    width: 2700
+    height: 1338
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
@@ -215,12 +215,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1279
-    height: 1331
+    width: 1285
+    height: 1338
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 13
+  controlID: 62
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,25 +231,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PreferenceSettingsWindow
+  m_Name: PackageManagerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1279
-    height: 842
-  m_MinSize: {x: 311, y: 221}
+    width: 1285
+    height: 848
+  m_MinSize: {x: 801, y: 271}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 19}
   - {fileID: 18}
-  m_Selected: 3
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 3
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,9 +266,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 842
-    width: 1279
-    height: 489
+    y: 848
+    width: 1285
+    height: 490
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
@@ -293,10 +293,10 @@ MonoBehaviour:
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
-    x: 1279
+    x: 1285
     y: 0
-    width: 579
-    height: 1331
+    width: 582
+    height: 1338
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
@@ -318,8 +318,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 579
-    height: 1014
+    width: 582
+    height: 1020
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
@@ -337,23 +337,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1014
-    width: 579
-    height: 317
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+    y: 1020
+    width: 582
+    height: 318
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -371,8 +371,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 826
-    height: 637
+    width: 833
+    height: 638
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
@@ -401,10 +401,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1287
-    y: 1095
-    width: 577
-    height: 296
+    x: 1286
+    y: 1101
+    width: 580
+    height: 297
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 577, y: 275}
+  m_TargetSize: {x: 580, y: 276}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -436,10 +436,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -288.5
-    m_HBaseRangeMax: 288.5
-    m_VBaseRangeMin: -137.5
-    m_VBaseRangeMax: 137.5
+    m_HBaseRangeMin: -290
+    m_HBaseRangeMax: 290
+    m_VBaseRangeMin: -138
+    m_VBaseRangeMax: 138
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -457,23 +457,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 577
-      height: 275
+      width: 580
+      height: 276
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 288.5, y: 137.5}
+    m_Translation: {x: 290, y: 138}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -288.5
-      y: -137.5
-      width: 577
-      height: 275
+      x: -290
+      y: -138
+      width: 580
+      height: 276
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 577, y: 296}
+  m_LastWindowPixelSize: {x: 580, y: 297}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -499,10 +499,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1866
-    y: 718
-    width: 825
-    height: 673
+    x: 1868
+    y: 719
+    width: 832
+    height: 679
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -524,8 +524,8 @@ MonoBehaviour:
   m_toolbarSeparator: {r: 0.15, g: 0.15, b: 0.15, a: 1}
   m_testListTreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00000000
-    m_LastClickedID: 0
+    m_SelectedIDs: 04000000
+    m_LastClickedID: 4
     m_ExpandedIDs: ffffffff010000000a000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -576,7 +576,7 @@ MonoBehaviour:
       allowToggleVisibility: 1
       canSort: 1
       userData: 0
-    - width: 53.75
+    - width: 55
       sortedAscending: 0
       headerContent:
         m_Text: SD
@@ -591,7 +591,7 @@ MonoBehaviour:
       allowToggleVisibility: 1
       canSort: 1
       userData: 0
-    - width: 53.75
+    - width: 55
       sortedAscending: 0
       headerContent:
         m_Text: Deviation
@@ -606,7 +606,7 @@ MonoBehaviour:
       allowToggleVisibility: 1
       canSort: 1
       userData: 0
-    - width: 53.75
+    - width: 55
       sortedAscending: 0
       headerContent:
         m_Text: Median
@@ -621,7 +621,7 @@ MonoBehaviour:
       allowToggleVisibility: 1
       canSort: 1
       userData: 0
-    - width: 53.75
+    - width: 55
       sortedAscending: 0
       headerContent:
         m_Text: Min
@@ -636,7 +636,7 @@ MonoBehaviour:
       allowToggleVisibility: 1
       canSort: 1
       userData: 0
-    - width: 53.75
+    - width: 55
       sortedAscending: 0
       headerContent:
         m_Text: Max
@@ -674,10 +674,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
+    x: 1
     y: 81
-    width: 1278
-    height: 821
+    width: 1284
+    height: 827
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -695,8 +695,8 @@ MonoBehaviour:
   m_SearchText: 
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c49b905d
-    m_LastClickedID: 1569758148
+    m_SelectedIDs: 6f56821b
+    m_LastClickedID: 461526639
     m_ExpandedIDs: 2956c29689577ec10000000001fecd11
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -796,10 +796,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
+    x: 1
     y: 81
-    width: 1278
-    height: 821
+    width: 1284
+    height: 827
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1687,10 +1687,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 923
-    width: 1278
-    height: 468
+    x: 1
+    y: 929
+    width: 1284
+    height: 469
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1721,10 +1721,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1287
+    x: 1286
     y: 81
-    width: 577
-    height: 993
+    width: 580
+    height: 999
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1740,7 +1740,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1efbffff
+      m_ExpandedIDs: 5cceffff8ae3ffffeee5ffffeee6ffff52e9ffffa4eafffffaecfffff0eeffff54f1ffff90f4fffff4f6ffffb6f7ffff4ef9ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1784,10 +1784,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1275
-    y: 691
-    width: 577
-    height: 707
+    x: 1286
+    y: 1101
+    width: 580
+    height: 297
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1817,14 +1817,14 @@ MonoBehaviour:
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: U:\_GitHub\DOTSEventsStressTest 2022.3
+  m_LastProjectPath: U:\_GitHub\DOTSEventsStressTest-2022.3
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 3af30000
     m_LastClickedID: 62266
-    m_ExpandedIDs: 0000000096680000
+    m_ExpandedIDs: 0000000058670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1849,10 +1849,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 21}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096680000
+    m_ExpandedIDs: ffffffff0000000058670000f66900000a6a00000c6a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1948,7 +1948,7 @@ MonoBehaviour:
     m_CachedPref: 266
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: -7674
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
@@ -1975,10 +1975,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1866
+    x: 1868
     y: 81
-    width: 825
-    height: 616
+    width: 832
+    height: 617
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1990,11 +1990,11 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 275
+    ID: 271
     splitterInitialOffset: 707
     currentActiveSplitter: -1
     realSizes:
-    - 409
+    - 410
     - 137
     relativeSizes:
     - 0.75
@@ -2005,7 +2005,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 546
+    lastTotalSize: 547
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -2022,7 +2022,7 @@ MonoBehaviour:
       name: PolymorphicStructs
       fullName: PolymorphicStructs
       resultStatus: 1
-      duration: 11.482803
+      duration: 7.7525163
       messages: 
       output: 
       stacktrace: 
@@ -2037,8 +2037,8 @@ MonoBehaviour:
       uniqueId: '[RuntimeTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll][suite]'
       name: RuntimeTests.dll
       fullName: U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 7.748877
       messages: 
       output: 
       stacktrace: 
@@ -2053,8 +2053,8 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/[RuntimeTests][suite]
       name: RuntimeTests
       fullName: RuntimeTests
-      resultStatus: 1
-      duration: 11.472424
+      resultStatus: 0
+      duration: 7.7464633
       messages: 
       output: 
       stacktrace: 
@@ -2069,13 +2069,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers]
       name: A_ParallelWriteToStream_ParallelPollBuffers
       fullName: RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers
-      resultStatus: 1
-      duration: 1.3007288
+      resultStatus: 0
+      duration: 0.6803522
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t5.80 ms\nMedian:\t\t6.11 ms\nMax:\t\t6.43
-        ms\nAvg:\t\t6.08 ms\nStdDev:\t\t0.19 ms\nSampleCount:\t10\nSum:\t\t60.79
-        ms\r\nFirst samples:\t\u2588\u2586\u2584\u2582\u2585\u2586\u2585\u2583\u2581\u2581\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"A_ParallelWriteToStream_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[6.434500000000071,6.240099999999984,6.072700000000054,5.925899999999956,6.14020000000005,6.2450000000000049,6.143100000000004,5.975000000000023,5.804000000000087,5.807300000000055],\"Min\":5.804000000000087,\"Max\":6.434500000000071,\"Median\":6.106450000000052,\"Average\":6.0787800000000289,\"StandardDeviation\":0.19273930994999018,\"Sum\":60.78780000000029}]}\r\n##performancetestruninfo2:{\"TestSuite\":\"Playmode\",\"Date\":1703942105201,\"Player\":{\"Development\":true,\"ScreenWidth\":5120,\"ScreenHeight\":1440,\"ScreenRefreshRate\":120,\"Fullscreen\":false,\"Vsync\":0,\"AntiAliasing\":0,\"Batchmode\":false,\"RenderThreadingMode\":\"GraphicsJobs\",\"GpuSkinning\":true,\"Platform\":\"WindowsEditor\",\"ColorSpace\":\"Linear\",\"AnisotropicFiltering\":\"Enable\",\"BlendWeights\":\"TwoBones\",\"GraphicsApi\":\"Direct3D11\",\"ScriptingBackend\":\"Mono2x\",\"AndroidTargetSdkVersion\":\"AndroidApiLevelAuto\",\"AndroidBuildSystem\":\"Gradle\",\"BuildTarget\":\"StandaloneWindows64\",\"StereoRenderingPath\":\"MultiPass\"},\"Hardware\":{\"OperatingSystem\":\"Windows
+      output: "Time in Milliseconds\nMin:\t\t5.97 ms\nMedian:\t\t6.44 ms\nMax:\t\t8.49
+        ms\nAvg:\t\t6.86 ms\nStdDev:\t\t0.88 ms\nSampleCount:\t10\nSum:\t\t68.57
+        ms\r\nFirst samples:\t\u2586\u2587\u2582\u2583\u2588\u2581\u2582\u2582\u2581\u2581\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"A_ParallelWriteToStream_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[7.8332999999999519,8.102100000000008,6.3507000000000179,6.792499999999961,8.494500000000017,5.970700000000022,6.478799999999978,6.402499999999975,6.1375999999999639,6.0049000000000209],\"Min\":5.970700000000022,\"Max\":8.494500000000017,\"Median\":6.440649999999977,\"Average\":6.8567599999999919,\"StandardDeviation\":0.8845385952009094,\"Sum\":68.56759999999992}]}\r\n##performancetestruninfo2:{\"TestSuite\":\"Playmode\",\"Date\":1704373942523,\"Player\":{\"Development\":true,\"ScreenWidth\":5120,\"ScreenHeight\":1440,\"ScreenRefreshRate\":120,\"Fullscreen\":false,\"Vsync\":0,\"AntiAliasing\":0,\"Batchmode\":false,\"RenderThreadingMode\":\"GraphicsJobs\",\"GpuSkinning\":true,\"Platform\":\"WindowsEditor\",\"ColorSpace\":\"Linear\",\"AnisotropicFiltering\":\"Enable\",\"BlendWeights\":\"TwoBones\",\"GraphicsApi\":\"Direct3D11\",\"ScriptingBackend\":\"Mono2x\",\"AndroidTargetSdkVersion\":\"AndroidApiLevelAuto\",\"AndroidBuildSystem\":\"Gradle\",\"BuildTarget\":\"StandaloneWindows64\",\"StereoRenderingPath\":\"MultiPass\"},\"Hardware\":{\"OperatingSystem\":\"Windows
         11  (10.0.22631) 64bit\",\"DeviceModel\":\"Z790 AORUS PRO X (Gigabyte Technology
         Co., Ltd.)\",\"DeviceName\":\"CODESMILE-PC\",\"ProcessorType\":\"Intel(R)
         Core(TM) i9-14900K\",\"ProcessorCount\":32,\"GraphicsDeviceName\":\"NVIDIA
@@ -2093,13 +2093,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers]
       name: B_SingleWriteToBuffers_ParallelPollBuffers
       fullName: RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers
-      resultStatus: 1
-      duration: 1.0397053
+      resultStatus: 0
+      duration: 0.6947518
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t4.80 ms\nMedian:\t\t4.94 ms\nMax:\t\t5.00
-        ms\nAvg:\t\t4.92 ms\nStdDev:\t\t0.07 ms\nSampleCount:\t10\nSum:\t\t49.19
-        ms\r\nFirst samples:\t\u2586\u2588\u2588\u2586\u2587\u2583\u2584\u2582\u2588\u2581\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"B_SingleWriteToBuffers_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.936199999999985,4.999400000000037,4.996099999999956,4.941799999999944,4.95920000000001,4.857399999999984,4.885499999999979,4.824500000000057,4.992500000000064,4.80090000000007],\"Min\":4.80090000000007,\"Max\":4.999400000000037,\"Median\":4.9389999999999649,\"Average\":4.9193500000000089,\"StandardDeviation\":0.06930799737402763,\"Sum\":49.193500000000089}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t5.03 ms\nMedian:\t\t6.87 ms\nMax:\t\t7.60
+        ms\nAvg:\t\t6.46 ms\nStdDev:\t\t0.94 ms\nSampleCount:\t10\nSum:\t\t64.64
+        ms\r\nFirst samples:\t\u2587\u2586\u2583\u2586\u2587\u2588\u2587\u2582\u2582\u2581\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"B_SingleWriteToBuffers_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[7.3378999999999909,6.737500000000011,5.633500000000026,7.003899999999987,7.312599999999975,7.597099999999955,7.213400000000036,5.536699999999996,5.241800000000012,5.0253999999999909],\"Min\":5.0253999999999909,\"Max\":7.597099999999955,\"Median\":6.870699999999999,\"Average\":6.463979999999998,\"StandardDeviation\":0.9385409813108773,\"Sum\":64.63979999999998}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2113,13 +2113,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers]
       name: C_ParallelWriteToBuffersECB_ParallelPollBuffers
       fullName: RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers
-      resultStatus: 1
-      duration: 0.9567357
+      resultStatus: 0
+      duration: 0.7455426
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t8.87 ms\nMedian:\t\t9.22 ms\nMax:\t\t11.84
-        ms\nAvg:\t\t9.54 ms\nStdDev:\t\t0.88 ms\nSampleCount:\t10\nSum:\t\t95.43
-        ms\r\nFirst samples:\t\u2588\u2581\u2581\u2582\u2582\u2581\u2583\u2585\u2582\u2582\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[11.839699999999994,8.871099999999956,8.922800000000052,9.406600000000026,9.094299999999976,8.907799999999952,9.532199999999989,10.421799999999962,9.164099999999963,9.271299999999997],\"Min\":8.871099999999956,\"Max\":11.839699999999994,\"Median\":9.21769999999998,\"Average\":9.543169999999986,\"StandardDeviation\":0.8788706458290665,\"Sum\":95.43169999999987}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t8.91 ms\nMedian:\t\t9.54 ms\nMax:\t\t11.82
+        ms\nAvg:\t\t10.08 ms\nStdDev:\t\t1.16 ms\nSampleCount:\t10\nSum:\t\t100.80
+        ms\r\nFirst samples:\t\u2583\u2582\u2584\u2588\u2582\u2588\u2581\u2581\u2582\u2588\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[9.65379999999999,9.24309999999997,10.10590000000002,11.788899999999956,9.42999999999995,11.735299999999996,8.98969999999997,8.907899999999984,9.122799999999984,11.822400000000016],\"Min\":8.907899999999984,\"Max\":11.822400000000016,\"Median\":9.54189999999997,\"Average\":10.079979999999983,\"StandardDeviation\":1.161048588819613,\"Sum\":100.79979999999984}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2133,13 +2133,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities]
       name: D_ParallelWriteToStream_SingleApplyToEntities
       fullName: RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities
-      resultStatus: 1
-      duration: 0.84297
+      resultStatus: 0
+      duration: 0.6700781
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t3.08 ms\nMedian:\t\t3.26 ms\nMax:\t\t3.53
-        ms\nAvg:\t\t3.23 ms\nStdDev:\t\t0.13 ms\nSampleCount:\t10\nSum:\t\t32.34
-        ms\r\nFirst samples:\t\u2581\u2582\u2584\u2581\u2582\u2584\u2584\u2588\u2584\u2584\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"D_ParallelWriteToStream_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.0756999999999268,3.114900000000034,3.296600000000012,3.1049999999999047,3.1174000000000889,3.26279999999997,3.294999999999959,3.5277999999999567,3.2987000000000536,3.25],\"Min\":3.0756999999999268,\"Max\":3.5277999999999567,\"Median\":3.256399999999985,\"Average\":3.2343899999999907,\"StandardDeviation\":0.12988782429465638,\"Sum\":32.343899999999909}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t3.39 ms\nMedian:\t\t4.08 ms\nMax:\t\t4.68
+        ms\nAvg:\t\t4.03 ms\nStdDev:\t\t0.42 ms\nSampleCount:\t10\nSum:\t\t40.35
+        ms\r\nFirst samples:\t\u2588\u2586\u2588\u2583\u2585\u2585\u2581\u2583\u2581\u2584\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"D_ParallelWriteToStream_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.677999999999997,4.27109999999999,4.636799999999994,3.7999000000000366,4.13719999999995,4.150599999999997,3.4395000000000097,3.8220000000000029,3.3876000000000205,4.025700000000029],\"Min\":3.3876000000000205,\"Max\":4.677999999999997,\"Median\":4.08144999999999,\"Average\":4.034840000000003,\"StandardDeviation\":0.4158891563866407,\"Sum\":40.34840000000003}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2153,13 +2153,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities]
       name: E_ParallelWriteToStream_ParallelApplyToEntities
       fullName: RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities
-      resultStatus: 1
-      duration: 0.8787204
+      resultStatus: 0
+      duration: 0.6479807
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t1.10 ms\nMedian:\t\t1.36 ms\nMax:\t\t1.44
-        ms\nAvg:\t\t1.32 ms\nStdDev:\t\t0.11 ms\nSampleCount:\t10\nSum:\t\t13.19
-        ms\r\nFirst samples:\t\u2584\u2587\u2588\u2582\u2586\u2587\u2586\u2586\u2587\u2581\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"E_ParallelWriteToStream_ParallelApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[1.2651999999999362,1.3959999999999582,1.4401000000000295,1.1624000000000479,1.3658000000000357,1.3983999999999242,1.3500999999999977,1.3269999999999982,1.382600000000025,1.0974999999999682],\"Min\":1.0974999999999682,\"Max\":1.4401000000000295,\"Median\":1.3579500000000167,\"Average\":1.318509999999992,\"StandardDeviation\":0.10518689509630032,\"Sum\":13.18509999999992}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t1.32 ms\nMedian:\t\t1.98 ms\nMax:\t\t2.41
+        ms\nAvg:\t\t1.98 ms\nStdDev:\t\t0.34 ms\nSampleCount:\t10\nSum:\t\t19.78
+        ms\r\nFirst samples:\t\u2588\u2588\u2585\u2584\u2585\u2588\u2585\u2585\u2583\u2581\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"E_ParallelWriteToStream_ParallelApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[2.4080000000000156,2.403599999999983,2.0013000000000149,1.7380999999999745,1.954499999999996,2.4125999999999978,2.0179999999999724,1.8979999999999678,1.6274999999999978,1.318399999999997],\"Min\":1.318399999999997,\"Max\":2.4125999999999978,\"Median\":1.9779000000000054,\"Average\":1.9779999999999916,\"StandardDeviation\":0.3434358863019441,\"Sum\":19.779999999999917}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2173,13 +2173,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities]
       name: F_ParallelCreateEventEntities_SingleApplyToEntities
       fullName: RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities
-      resultStatus: 1
-      duration: 2.4470844
+      resultStatus: 0
+      duration: 1.5614011
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t74.79 ms\nMedian:\t\t83.21 ms\nMax:\t\t363.35
-        ms\nAvg:\t\t130.65 ms\nStdDev:\t\t89.55 ms\nSampleCount:\t10\nSum:\t\t1306.50
-        ms\r\nFirst samples:\t\u2585\u2581\u2581\u2582\u2588\u2581\u2581\u2581\u2581\u2582\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"F_ParallelCreateEventEntities_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[227.28179999999998,80.3787000000001,81.15200000000005,134.31680000000007,363.3524,74.78599999999983,75.53870000000006,75.72180000000003,85.27009999999996,108.69929999999977],\"Min\":74.78599999999983,\"Max\":363.3524,\"Median\":83.21105,\"Average\":130.64975999999997,\"StandardDeviation\":89.55173385244085,\"Sum\":1306.4975999999997}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t74.08 ms\nMedian:\t\t75.96 ms\nMax:\t\t111.64
+        ms\nAvg:\t\t80.73 ms\nStdDev:\t\t11.46 ms\nSampleCount:\t10\nSum:\t\t807.27
+        ms\r\nFirst samples:\t\u2584\u2582\u2581\u2581\u2588\u2581\u2581\u2581\u2581\u2581\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"F_ParallelCreateEventEntities_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[91.97149999999999,77.08650000000006,74.66509999999994,74.6644,111.63620000000003,76.23680000000002,76.55790000000002,75.68290000000013,74.69250000000011,74.07769999999982],\"Min\":74.07769999999982,\"Max\":111.63620000000003,\"Median\":75.95985000000008,\"Average\":80.72715000000003,\"StandardDeviation\":11.455073250245944,\"Sum\":807.2715000000002}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2193,13 +2193,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.G_ParallelWriteToStream_SinglePollList]
       name: G_ParallelWriteToStream_SinglePollList
       fullName: RuntimeTests.G_ParallelWriteToStream_SinglePollList
-      resultStatus: 1
-      duration: 1.0282825
+      resultStatus: 0
+      duration: 0.7159646
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t3.88 ms\nMedian:\t\t3.96 ms\nMax:\t\t4.04
-        ms\nAvg:\t\t3.96 ms\nStdDev:\t\t0.04 ms\nSampleCount:\t10\nSum:\t\t39.58
-        ms\r\nFirst samples:\t\u2585\u2584\u2581\u2585\u2583\u2585\u2585\u2586\u2588\u2584\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.G_ParallelWriteToStream_SinglePollList\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"G_ParallelWriteToStream_SinglePollList\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.9692999999999758,3.9519000000000235,3.8774000000000798,3.95780000000002,3.9167999999999667,3.9747999999999594,3.9652999999999567,3.9909999999999856,4.037400000000048,3.939300000000003],\"Min\":3.8774000000000798,\"Max\":4.037400000000048,\"Median\":3.9615499999999885,\"Average\":3.9581000000000019,\"StandardDeviation\":0.040542841538295747,\"Sum\":39.58100000000002}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t3.83 ms\nMedian:\t\t4.56 ms\nMax:\t\t5.30
+        ms\nAvg:\t\t4.50 ms\nStdDev:\t\t0.50 ms\nSampleCount:\t10\nSum:\t\t45.01
+        ms\r\nFirst samples:\t\u2581\u2583\u2585\u2585\u2587\u2581\u2588\u2581\u2586\u2584\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.G_ParallelWriteToStream_SinglePollList\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"G_ParallelWriteToStream_SinglePollList\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.8310000000000175,4.35450000000003,4.5808999999999859,4.667500000000018,5.038400000000024,3.9008999999999789,5.3028000000000479,3.831799999999987,4.956799999999987,4.542100000000005],\"Min\":3.8310000000000175,\"Max\":5.3028000000000479,\"Median\":4.561499999999995,\"Average\":4.500670000000008,\"StandardDeviation\":0.495332304720791,\"Sum\":45.00670000000008}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2213,13 +2213,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap]
       name: H_ParallelWriteToStream_SinglePollHashMap
       fullName: RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap
-      resultStatus: 1
-      duration: 1.1247419
+      resultStatus: 0
+      duration: 0.6923038
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t5.16 ms\nMedian:\t\t5.29 ms\nMax:\t\t5.39
-        ms\nAvg:\t\t5.28 ms\nStdDev:\t\t0.06 ms\nSampleCount:\t10\nSum:\t\t52.84
-        ms\r\nFirst samples:\t\u2586\u2588\u2585\u2584\u2582\u2581\u2584\u2586\u2585\u2586\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"H_ParallelWriteToStream_SinglePollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[5.320100000000025,5.3881000000000089,5.276899999999955,5.274300000000039,5.19539999999995,5.163300000000049,5.262400000000071,5.325800000000072,5.295500000000061,5.33949999999993],\"Min\":5.163300000000049,\"Max\":5.3881000000000089,\"Median\":5.286200000000008,\"Average\":5.284130000000016,\"StandardDeviation\":0.06334753428508251,\"Sum\":52.84130000000016}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t5.11 ms\nMedian:\t\t5.69 ms\nMax:\t\t6.79
+        ms\nAvg:\t\t5.95 ms\nStdDev:\t\t0.61 ms\nSampleCount:\t10\nSum:\t\t59.50
+        ms\r\nFirst samples:\t\u2582\u2584\u2588\u2583\u2587\u2583\u2581\u2588\u2587\u2583\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"H_ParallelWriteToStream_SinglePollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[5.268700000000024,5.812900000000013,6.7934999999999949,5.51279999999997,6.521800000000042,5.570600000000013,5.105399999999975,6.695899999999995,6.643500000000017,5.575500000000034],\"Min\":5.105399999999975,\"Max\":6.7934999999999949,\"Median\":5.6942000000000239,\"Average\":5.950060000000008,\"StandardDeviation\":0.6121609448502944,\"Sum\":59.50060000000008}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2233,13 +2233,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap]
       name: I_ParallelWriteToStream_ParallelPollHashMap
       fullName: RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap
-      resultStatus: 1
-      duration: 0.9603123
+      resultStatus: 0
+      duration: 0.6613467
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t3.17 ms\nMedian:\t\t3.52 ms\nMax:\t\t3.71
-        ms\nAvg:\t\t3.49 ms\nStdDev:\t\t0.15 ms\nSampleCount:\t10\nSum:\t\t34.95
-        ms\r\nFirst samples:\t\u2586\u2586\u2585\u2588\u2587\u2587\u2584\u2584\u2581\u2584\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"I_ParallelWriteToStream_ParallelPollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.580600000000004,3.590000000000032,3.457200000000057,3.70780000000002,3.6410000000000766,3.6037000000000036,3.414099999999962,3.3840999999999896,3.171000000000049,3.397100000000023],\"Min\":3.171000000000049,\"Max\":3.70780000000002,\"Median\":3.5189000000000307,\"Average\":3.494660000000022,\"StandardDeviation\":0.1515254447279421,\"Sum\":34.94660000000022}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t3.30 ms\nMedian:\t\t3.79 ms\nMax:\t\t4.85
+        ms\nAvg:\t\t3.86 ms\nStdDev:\t\t0.40 ms\nSampleCount:\t10\nSum:\t\t38.62
+        ms\r\nFirst samples:\t\u2588\u2583\u2581\u2583\u2583\u2584\u2585\u2582\u2583\u2584\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"I_ParallelWriteToStream_ParallelPollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.854100000000017,3.6450000000000388,3.2993000000000167,3.845799999999997,3.733099999999979,3.957400000000007,4.12639999999999,3.523300000000006,3.724800000000016,3.910599999999988],\"Min\":3.2993000000000167,\"Max\":4.854100000000017,\"Median\":3.789449999999988,\"Average\":3.8619800000000055,\"StandardDeviation\":0.39746350222378776,\"Sum\":38.619800000000058}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2253,13 +2253,13 @@ MonoBehaviour:
       uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.J_SingleDirectModification]
       name: J_SingleDirectModification
       fullName: RuntimeTests.J_SingleDirectModification
-      resultStatus: 1
-      duration: 0.8815245
+      resultStatus: 0
+      duration: 0.6714656
       messages: 
-      output: "Time in Milliseconds\nMin:\t\t2.60 ms\nMedian:\t\t2.63 ms\nMax:\t\t2.73
-        ms\nAvg:\t\t2.65 ms\nStdDev:\t\t0.05 ms\nSampleCount:\t10\nSum:\t\t26.50
-        ms\r\nFirst samples:\t\u2586\u2588\u2584\u2582\u2582\u2582\u2583\u2581\u2588\u2582\r\n(not
-        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.J_SingleDirectModification\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"J_SingleDirectModification\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[2.6885999999999514,2.7291000000000169,2.6487999999999376,2.608000000000061,2.616600000000062,2.619399999999928,2.6424999999999274,2.5984999999999447,2.7297999999999549,2.6183999999999516],\"Min\":2.5984999999999447,\"Max\":2.7297999999999549,\"Median\":2.6309499999999277,\"Average\":2.6499699999999737,\"StandardDeviation\":0.04651797609526538,\"Sum\":26.499699999999736}]}\r\n"
+      output: "Time in Milliseconds\nMin:\t\t4.94 ms\nMedian:\t\t5.05 ms\nMax:\t\t6.26
+        ms\nAvg:\t\t5.16 ms\nStdDev:\t\t0.37 ms\nSampleCount:\t10\nSum:\t\t51.57
+        ms\r\nFirst samples:\t\u2581\u2581\u2582\u2582\u2581\u2582\u2581\u2581\u2588\u2582\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.J_SingleDirectModification\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"J_SingleDirectModification\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[5.013899999999978,4.970899999999972,5.129599999999982,5.104199999999992,5.016399999999976,5.075500000000034,4.941599999999994,4.960499999999968,6.255200000000002,5.099699999999984],\"Min\":4.941599999999994,\"Max\":6.255200000000002,\"Median\":5.045950000000005,\"Average\":5.156749999999988,\"StandardDeviation\":0.37140211967624006,\"Sum\":51.56749999999988}]}\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -2269,16 +2269,13 @@ MonoBehaviour:
       - Performance
       parentId: 1001
       parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
-    m_ResultText: "J_SingleDirectModification (0.882s)\n---\nTime in Milliseconds\nMin:\t\t2.60
-      ms\nMedian:\t\t2.63 ms\nMax:\t\t2.73 ms\nAvg:\t\t2.65 ms\nStdDev:\t\t0.05 ms\nSampleCount:\t10\nSum:\t\t26.50
-      ms\r\nFirst samples:\t\u2586\u2588\u2584\u2582\u2582\u2582\u2583\u2581\u2588\u2582\r\n(not
-      enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.J_SingleDirectModification\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"J_SingleDirectModification\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[2.6885999999999514,2.7291000000000169,2.6487999999999376,2.608000000000061,2.616600000000062,2.619399999999928,2.6424999999999274,2.5984999999999447,2.7297999999999549,2.6183999999999516],\"Min\":2.5984999999999447,\"Max\":2.7297999999999549,\"Median\":2.6309499999999277,\"Average\":2.6499699999999737,\"StandardDeviation\":0.04651797609526538,\"Sum\":26.499699999999736}]}"
+    m_ResultText: RuntimeTests (7.746s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36934e8a
-      m_LastClickedID: -1974561994
-      m_ExpandedIDs: ff407c83fff26d8bcedba58d393fb88f98dabd976be474a79e4cb5aba44c0eb8de18d9b95e9f80ba58f5b9c40133dfc5f08570cf7e71fae0925af8e25f6e63f139b52cfc59570f0406336806c4c4770afc38c30c8367950e9e389a1006dd1d1503faa415b023ff1e4760891f48821f2e6ac61a376a694c37511b16450759845a5753d05cd5188c5d4a5c36681844d16c05ca4e74b95d5c76ffffff7f
+      m_SelectedIDs: ff407c83
+      m_LastClickedID: -2089008897
+      m_ExpandedIDs: ff407c83fff26d8bcedba58d393fb88f98dabd976be474a79e4cb5aba44c0eb8de18d9b95e9f80ba58f5b9c40133dfc5f08570cf7e71fae0925af8e25f6e63f139b52cfc59570f0406336806c4c4770afc38c30c8367950e9e389a1006dd1d1503faa415b023ff1e4760891f48821f2e6ac61a376a694c37511b1645977074470759845a5753d05cd5188c5d4a5c36681844d16c05ca4e74b95d5c76ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

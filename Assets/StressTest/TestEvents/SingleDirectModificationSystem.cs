@@ -9,19 +9,19 @@ public partial class SingleDirectModificationSystem : SystemBase
 {
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.J_SingleDirectModification)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.J_SingleDirectModification)
             return;
 
         Entities.ForEach((in Damager damager) => 
         {
-            if (HasComponent<Health>(damager.Target))
+            if (SystemAPI.HasComponent<Health>(damager.Target))
             {
-                Health health = GetComponent<Health>(damager.Target);
+                Health health = SystemAPI.GetComponent<Health>(damager.Target);
                 health.Value -= damager.Damage;
-                SetComponent(damager.Target, health);
+                SystemAPI.SetComponent(damager.Target, health);
             }
         }).Schedule();
     }
