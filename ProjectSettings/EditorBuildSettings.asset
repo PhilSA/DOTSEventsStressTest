@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/StressTest/OOPTest/OOPScene.unity
-    guid: 0ff704ff4f0a2d947a0b1eeaebd0239f
+    path: Assets/StressTest/StressTest.unity
+    guid: fe5dc9b353b36e044acea3f2c8dc3542
   m_configObjects: {}
