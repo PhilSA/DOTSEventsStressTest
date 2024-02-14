@@ -9,16 +9,17 @@ public partial class C_ParallelWriteToBuffersECB_ParallelPollBuffers_System : Sy
 {
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.C_ParallelWriteToBuffersECB_ParallelPollBuffers)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.C_ParallelWriteToBuffersECB_ParallelPollBuffers)
             return;
 
         EntityQuery healthsQuery = GetEntityQuery(typeof(Health), typeof(DamageEvent));
         EntityQuery damageBuffersQuery = GetEntityQuery(typeof(DamageEvent));
 
-        EndSimulationEntityCommandBufferSystem ecbSystem = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
+        // FIXME: change this to NOT use the 'Managed' version of the method:
+        EndSimulationEntityCommandBufferSystem ecbSystem = World.GetOrCreateSystemManaged<EndSimulationEntityCommandBufferSystem>();
         EntityCommandBuffer.ParallelWriter ecb = ecbSystem.CreateCommandBuffer().AsParallelWriter();
 
         Dependency = Entities.ForEach((Entity entity, int entityInQueryIndex, in Damager damager) =>

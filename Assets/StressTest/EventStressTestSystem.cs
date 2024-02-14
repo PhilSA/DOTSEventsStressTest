@@ -5,14 +5,14 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[AlwaysUpdateSystem]
+[RequireMatchingQueriesForUpdate]
 [AlwaysSynchronizeSystem]
 [UpdateInGroup(typeof(SimulationSystemGroup), OrderLast = true)]
 public partial class EventStressTestSystem : SystemBase
 {
     protected override void OnUpdate()
     {
-        EntityManager.CompleteAllJobs();
+        EntityManager.CompleteAllTrackedJobs();
 
         EntityCommandBuffer ecb = new EntityCommandBuffer(Allocator.Temp);
 
@@ -29,7 +29,7 @@ public partial class EventStressTestSystem : SystemBase
                     for (int y = 0; y < spawnResolution; y++)
                     {
                         Entity spawnedPrefab = ecb.Instantiate(spawner.HealthPrefab);
-                        ecb.SetComponent(spawnedPrefab, new Translation { Value = new float3(x * spawner.Spacing, 0f, y * spawner.Spacing) });
+                        ecb.SetComponent(spawnedPrefab, new LocalTransform  { Position = new float3(x * spawner.Spacing, 0f, y * spawner.Spacing) });
 
                         for (int d = 0; d < spawner.DamagersPerHealths; d++)
                         {

@@ -20,10 +20,10 @@ public partial class E_ParallelWriteToStream_ParallelApplyToEntities_System : Sy
 
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.E_ParallelWriteToStream_ParallelApplyToEntities)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.E_ParallelWriteToStream_ParallelApplyToEntities)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -32,7 +32,9 @@ public partial class E_ParallelWriteToStream_ParallelApplyToEntities_System : Sy
         {
             PendingStream.Dispose();
         }
-        PendingStream = new NativeStream(damagersQuery.CalculateChunkCount(), Allocator.TempJob);
+
+        var chunkCount = damagersQuery.CalculateChunkCount();
+        PendingStream = new NativeStream(chunkCount, Allocator.TempJob);
 
         Dependency = new DamagersWriteToStreamJob
         {
@@ -44,8 +46,8 @@ public partial class E_ParallelWriteToStream_ParallelApplyToEntities_System : Sy
         Dependency = new ParallelApplyStreamEventsToEntitiesJob
         {
             StreamDamageEvents = PendingStream.AsReader(),
-            StorageInfoFromEntity = GetStorageInfoFromEntity(),
+            StorageInfoFromEntity = GetEntityStorageInfoLookup(),
             HealthType = GetComponentTypeHandle<Health>(false),
-        }.Schedule(damagersQuery.CalculateChunkCount(), 1, Dependency);
+        }.Schedule(chunkCount, 8, Dependency);
     }
 }

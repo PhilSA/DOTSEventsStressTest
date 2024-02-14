@@ -25,7 +25,6 @@ public enum EventType
 }
 
 [Serializable]
-[GenerateAuthoringComponent]
 public struct EventStressTest : IComponentData
 {
     public EventType EventType;

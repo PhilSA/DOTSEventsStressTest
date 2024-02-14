@@ -11,7 +11,7 @@ using Unity.Transforms;
 public struct EnsureHashMapCapacityJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
-    public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;
+    public NativeParallelMultiHashMap<Entity, DamageEvent> DamageEventsMap;
 
     public void Execute()
     {
@@ -33,7 +33,7 @@ public struct EnsureHashMapCapacityJob : IJob
 public struct SingleWriteStreamEventsToHashMapJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
-    public NativeMultiHashMap<Entity, DamageEvent> DamageEventsMap;
+    public NativeParallelMultiHashMap<Entity, DamageEvent> DamageEventsMap;
 
     public void Execute()
     {
@@ -54,7 +54,7 @@ public struct SingleWriteStreamEventsToHashMapJob : IJob
 public struct ParallelWriteStreamEventsToHashMapJob : IJobParallelFor
 {
     public NativeStream.Reader StreamDamageEvents;
-    public NativeMultiHashMap<Entity, DamageEvent>.ParallelWriter DamageEventsMap;
+    public NativeParallelMultiHashMap<Entity, DamageEvent>.ParallelWriter DamageEventsMap;
 
     public void Execute(int index)
     {

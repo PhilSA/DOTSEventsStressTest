@@ -13,7 +13,7 @@ using Unity.Transforms;
 public unsafe struct ParallelApplyStreamEventsToEntitiesJob : IJobParallelFor
 {
     public NativeStream.Reader StreamDamageEvents;
-    public StorageInfoFromEntity StorageInfoFromEntity;
+    public EntityStorageInfoLookup StorageInfoFromEntity;
     public ComponentTypeHandle<Health> HealthType;
 
     public unsafe void Execute(int index)
@@ -26,9 +26,9 @@ public unsafe struct ParallelApplyStreamEventsToEntitiesJob : IJobParallelFor
             {
                 EntityStorageInfo storageInfo = StorageInfoFromEntity[damageEvent.Target];
                 ArchetypeChunk chunk = storageInfo.Chunk;
-                if (chunk.Has(HealthType))
+                if (chunk.Has(ref HealthType))
                 {
-                    NativeArray<Health> chunkHealth = chunk.GetNativeArray(HealthType);
+                    NativeArray<Health> chunkHealth = chunk.GetNativeArray(ref HealthType);
                     int* healthIntPtr = (int*)chunkHealth.GetUnsafePtr();
                     healthIntPtr += storageInfo.IndexInChunk;
                     Interlocked.Add(ref UnsafeUtility.AsRef<int>(healthIntPtr), -1);

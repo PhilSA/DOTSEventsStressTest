@@ -120,7 +120,7 @@ public abstract class ECSTestsFixture : ECSTestsCommonBase
 			// Clean up systems before calling CheckInternalConsistency because we might have filters etc
 			// holding on SharedComponentData making checks fail
 			while (m_World.Systems.Count > 0)
-				m_World.DestroySystem(m_World.Systems[0]);
+				m_World.DestroySystemManaged(m_World.Systems[0]);
 
 			m_ManagerDebug.CheckInternalConsistency();
 

@@ -31,10 +31,10 @@ public partial class G_ParallelWriteToStream_SinglelPollList_System : SystemBase
 
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.G_ParallelWriteToStream_SinglePollList)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.G_ParallelWriteToStream_SinglePollList)
             return;
 
         EntityQuery damagersQuery = GetEntityQuery(typeof(Damager));
@@ -64,7 +64,7 @@ public partial class G_ParallelWriteToStream_SinglelPollList_System : SystemBase
         {
             EntityType = GetEntityTypeHandle(),
             DamageEventsList = DamageEventsList,
-            HealthFromEntity = GetComponentDataFromEntity<Health>(false),
+            HealthFromEntity = GetComponentLookup<Health>(false),
         }.Schedule(Dependency);
 
         Dependency = new ClearDamageEventListJob
@@ -73,4 +73,3 @@ public partial class G_ParallelWriteToStream_SinglelPollList_System : SystemBase
         }.Schedule(Dependency);
     }
 }
-

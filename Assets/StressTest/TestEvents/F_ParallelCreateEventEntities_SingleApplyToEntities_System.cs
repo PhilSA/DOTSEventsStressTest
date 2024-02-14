@@ -16,15 +16,16 @@ public partial class F_ParallelCreateEventEntities_SingleApplyToEntities_System 
 {
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.F_ParallelCreateEventEntities_SingleApplyToEntities)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.F_ParallelCreateEventEntities_SingleApplyToEntities)
             return;
 
         EntityArchetype eventArchetype = EntityManager.CreateArchetype(typeof(DamageEventComp));
-        EndSimulationEntityCommandBufferSystem ecbSystem = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
 
+        // FIXME: change this to NOT use the 'Managed' version of the method:
+        EndSimulationEntityCommandBufferSystem ecbSystem = World.GetOrCreateSystemManaged<EndSimulationEntityCommandBufferSystem>();
         EntityCommandBuffer.ParallelWriter createEventsECB = ecbSystem.CreateCommandBuffer().AsParallelWriter();
 
         Dependency = Entities.ForEach((Entity entity, int entityInQueryIndex, in Damager damager) =>
@@ -35,11 +36,11 @@ public partial class F_ParallelCreateEventEntities_SingleApplyToEntities_System 
 
         Dependency = Entities.ForEach((Entity entity, in DamageEventComp damageEvent) =>
         {
-            if(HasComponent<Health>(damageEvent.Target))
+            if(SystemAPI.HasComponent<Health>(damageEvent.Target))
             {
-                Health health = GetComponent<Health>(damageEvent.Target);
+                Health health = SystemAPI.GetComponent<Health>(damageEvent.Target);
                 health.Value -= damageEvent.Damage;
-                SetComponent(damageEvent.Target, health);
+                SystemAPI.SetComponent(damageEvent.Target, health);
             }
         }).Schedule(Dependency);
 
@@ -49,10 +50,12 @@ public partial class F_ParallelCreateEventEntities_SingleApplyToEntities_System 
 
 [UpdateInGroup(typeof(SimulationSystemGroup), OrderLast = true)]
 [UpdateAfter(typeof(EndSimulationEntityCommandBufferSystem))]
-public struct DestroyEventEntitiesSystem : ISystem
+public partial struct DestroyEventEntitiesSystem : ISystem
 {
+    EntityQuery eventsQuery;
     public void OnCreate(ref SystemState state)
     {
+        eventsQuery = state.GetEntityQuery(typeof(DamageEventComp));
     }
 
     public void OnDestroy(ref SystemState state)
@@ -61,7 +64,6 @@ public struct DestroyEventEntitiesSystem : ISystem
 
     public void OnUpdate(ref SystemState state)
     {
-        EntityQuery eventsQuery = state.GetEntityQuery(typeof(DamageEventComp));
         state.EntityManager.DestroyEntity(eventsQuery);
     }
 }

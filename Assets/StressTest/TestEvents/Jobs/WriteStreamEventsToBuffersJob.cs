@@ -10,7 +10,7 @@ using Unity.Transforms;
 public struct WriteStreamEventsToBuffersJob : IJob
 {
     public NativeStream.Reader StreamDamageEvents;
-    public BufferFromEntity<DamageEvent> DamageEventBufferFromEntity;
+    public BufferLookup<DamageEvent> DamageEventBufferFromEntity;
 
     public void Execute()
     {
@@ -20,7 +20,7 @@ public struct WriteStreamEventsToBuffersJob : IJob
             while (StreamDamageEvents.RemainingItemCount > 0)
             {
                 StreamDamageEvent damageEvent = StreamDamageEvents.Read<StreamDamageEvent>();
-                if (DamageEventBufferFromEntity.HasComponent(damageEvent.Target))
+                if (DamageEventBufferFromEntity.HasBuffer(damageEvent.Target))
                 {
                     DynamicBuffer<DamageEvent> damageEventBuffer = DamageEventBufferFromEntity[damageEvent.Target];
                     damageEventBuffer.Add(damageEvent.DamageEvent);

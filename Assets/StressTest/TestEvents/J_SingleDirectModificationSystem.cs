@@ -5,7 +5,7 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-public partial class SingleDirectModificationSystem : SystemBase
+public partial class J_SingleDirectModificationSystem : SystemBase
 {
     protected override void OnUpdate()
     {
@@ -15,7 +15,7 @@ public partial class SingleDirectModificationSystem : SystemBase
         if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.J_SingleDirectModification)
             return;
 
-        Entities.ForEach((in Damager damager) => 
+        Entities.ForEach((in Damager damager) =>
         {
             if (SystemAPI.HasComponent<Health>(damager.Target))
             {

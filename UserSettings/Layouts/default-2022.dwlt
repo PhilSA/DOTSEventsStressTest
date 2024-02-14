@@ -1,0 +1,2827 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 8
+    y: 51
+    width: 2700
+    height: 1388
+  m_ShowMode: 4
+  m_Title: Test Runner
+  m_RootView: {fileID: 5}
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestReportWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 524
+    width: 833
+    height: 814
+  m_MinSize: {x: 640, y: 480}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 15}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 1867
+    y: 0
+    width: 833
+    height: 1338
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 155
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2700
+    height: 1338
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 153
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 4}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2700
+    height: 1388
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2700
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 1368
+    width: 2700
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 12}
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 2700
+    height: 1338
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 154
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1285
+    height: 1338
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 13
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: PreferenceSettingsWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1285
+    height: 848
+  m_MinSize: {x: 311, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 19}
+  - {fileID: 18}
+  m_Selected: 3
+  m_LastSelected: 2
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 848
+    width: 1285
+    height: 490
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
+  m_Panes:
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Position:
+    serializedVersion: 2
+    x: 1285
+    y: 0
+    width: 582
+    height: 1338
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 99
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 582
+    height: 910
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 910
+    width: 582
+    height: 428
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 24}
+  m_Panes:
+  - {fileID: 24}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 833
+    height: 524
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 26}
+  m_Panes:
+  - {fileID: 25}
+  - {fileID: 26}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1293
+    y: 1096
+    width: 580
+    height: 295
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 580, y: 274}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -290
+    m_HBaseRangeMax: 290
+    m_VBaseRangeMin: -137
+    m_VBaseRangeMax: 137
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 580
+      height: 274
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 290, y: 137}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -290
+      y: -137
+      width: 580
+      height: 274
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 580, y: 295}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4272062d6dbd273438736c85848ea974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 640, y: 480}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Report
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1875
+    y: 605
+    width: 832
+    height: 793
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_colorWhite: {r: 1, g: 1, b: 1, a: 1}
+  m_colorBarBackground: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_colorBoxAndWhiskerBackground: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  m_colorBar: {r: 0.95, g: 0.95, b: 0.95, a: 1}
+  m_colorStandardLine: {r: 1, g: 1, b: 1, a: 1}
+  m_colorMedianLine: {r: 0.2, g: 0.5, b: 1, a: 0.5}
+  m_colorMedianText: {r: 0.4, g: 0.7, b: 1, a: 1}
+  m_colorWarningText: {r: 1, g: 0, b: 0, a: 1}
+  m_toolbarSeparator: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+  m_testListTreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 04000000
+    m_LastClickedID: 4
+    m_ExpandedIDs: ffffffff010000000a000000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+  m_testListMulticolumnHeaderState:
+    m_Columns:
+    - width: 500
+      sortedAscending: 1
+      headerContent:
+        m_Text: Name
+        m_Image: {fileID: 0}
+        m_Tooltip: Name of test
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 100
+      maxWidth: 1000000
+      autoResize: 0
+      allowToggleVisibility: 0
+      canSort: 1
+      userData: 0
+    - width: 50
+      sortedAscending: 0
+      headerContent:
+        m_Text: Groups
+        m_Image: {fileID: 0}
+        m_Tooltip: Number of Sample Groups
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    - width: 55
+      sortedAscending: 0
+      headerContent:
+        m_Text: SD
+        m_Image: {fileID: 0}
+        m_Tooltip: Standard Deviation
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    - width: 55
+      sortedAscending: 0
+      headerContent:
+        m_Text: Deviation
+        m_Image: {fileID: 0}
+        m_Tooltip: Standard Deviation / Median
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    - width: 55
+      sortedAscending: 0
+      headerContent:
+        m_Text: Median
+        m_Image: {fileID: 0}
+        m_Tooltip: Median value
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    - width: 55
+      sortedAscending: 0
+      headerContent:
+        m_Text: Min
+        m_Image: {fileID: 0}
+        m_Tooltip: Min value
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    - width: 55
+      sortedAscending: 0
+      headerContent:
+        m_Text: Max
+        m_Image: {fileID: 0}
+        m_Tooltip: Max value
+      contextMenuText: 
+      headerTextAlignment: 0
+      sortingArrowAlignment: 0
+      minWidth: 50
+      maxWidth: 1000000
+      autoResize: 1
+      allowToggleVisibility: 1
+      canSort: 1
+      userData: 0
+    m_VisibleColumns: 00000000010000000300000002000000040000000500000006000000
+    m_SortedColumns: 00000000
+  searchString: 
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13855, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Preferences
+    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 8
+    y: 81
+    width: 1284
+    height: 827
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 0
+  m_SplitterFlex: 0.2
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 6f56821b
+    m_LastClickedID: 461526639
+    m_ExpandedIDs: 2956c29689577ec10000000001fecd11
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 8
+    y: 81
+    width: 1284
+    height: 823
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7754dad1
+    m_LastClickedID: -774220681
+    m_ExpandedIDs: 53336be20000000007f2324d
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 8
+    y: 81
+    width: 1284
+    height: 823
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12070, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 900, y: 216}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Profiler
+    m_Image: {fileID: -1089619856830078684, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73.6
+    width: 1054.2
+    height: 663
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_Recording: 1
+  m_ActiveNativePlatformSupportModuleName: 
+  m_AllModules:
+  - rid: 6284989342400643072
+  - rid: 6284989342400643073
+  - rid: 6284989342400643074
+  - rid: 6284989342400643075
+  - rid: 6284989342400643076
+  - rid: 6284989342400643077
+  - rid: 6284989342400643078
+  - rid: 6284989342400643079
+  - rid: 6284989342400643080
+  - rid: 6284989342400643081
+  - rid: 6284989342400643082
+  - rid: 6284989342400643083
+  - rid: 6169416508969058304
+  - rid: 6284989342400643084
+  - rid: 6284989342400643085
+  - rid: 6169416508969058305
+  - rid: 6169416508969058306
+  m_CallstackRecordMode: 1
+  m_ClearOnPlay: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6169416508969058304
+      type: {class: MemoryProfilerModule, ns: Unity.Entities.Editor, asm: Unity.Entities.Editor}
+      data:
+        m_Identifier: Unity.Entities.Editor.MemoryProfilerModule, Unity.Entities.Editor,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - rid: 6169416508969058305
+      type: {class: StructuralChangesProfilerModule, ns: Unity.Entities.Editor, asm: Unity.Entities.Editor}
+      data:
+        m_Identifier: Unity.Entities.Editor.StructuralChangesProfilerModule, Unity.Entities.Editor,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - rid: 6169416508969058306
+      type: {class: RuntimeContentManagerProfilerModule, ns: , asm: Unity.Entities.Editor}
+      data:
+        m_Identifier: RuntimeContentManagerProfilerModule, Unity.Entities.Editor,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - rid: 6284989342400643072
+      type: {class: CPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.CPUProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 0
+        updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 0
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns: []
+            m_VisibleColumns: 
+            m_SortedColumns: 
+          m_ThreadIndexInThreadNames: 0
+          m_DetailedViewType: 0
+          m_DetailedViewSpliterState:
+            ID: 0
+            splitterInitialOffset: 0
+            currentActiveSplitter: 0
+            realSizes: []
+            relativeSizes: []
+            minSizes: []
+            maxSizes: []
+            lastTotalSize: 0
+            splitSize: 0
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 0
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns: []
+              m_VisibleColumns: 
+              m_SortedColumns: 
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+          m_FullThreadName: Main Thread
+          m_ThreadName: Main Thread
+          <threadId>k__BackingField: 0
+          <threadIndex>k__BackingField: -1
+          m_GroupName: 
+    - rid: 6284989342400643073
+      type: {class: GPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.GPUProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 0
+        updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 0
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns: []
+            m_VisibleColumns: 
+            m_SortedColumns: 
+          m_ThreadIndexInThreadNames: 0
+          m_DetailedViewType: 0
+          m_DetailedViewSpliterState:
+            ID: 0
+            splitterInitialOffset: 0
+            currentActiveSplitter: 0
+            realSizes: []
+            relativeSizes: []
+            minSizes: []
+            maxSizes: []
+            lastTotalSize: 0
+            splitSize: 0
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 0
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns: []
+              m_VisibleColumns: 
+              m_SortedColumns: 
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 150
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 03000000
+          m_FullThreadName: Main Thread
+          m_ThreadName: Main Thread
+          <threadId>k__BackingField: 0
+          <threadIndex>k__BackingField: -1
+          m_GroupName: 
+    - rid: 6284989342400643074
+      type: {class: RenderingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.RenderingProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643075
+      type: {class: MemoryProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.MemoryProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewSplit:
+          ID: 0
+          splitterInitialOffset: 0
+          currentActiveSplitter: -1
+          realSizes:
+          - 0
+          - 0
+          relativeSizes:
+          - 0.7
+          - 0.3
+          minSizes:
+          - 450
+          - 50
+          maxSizes:
+          - 0
+          - 0
+          lastTotalSize: 0
+          splitSize: 6
+          xOffset: 0
+          m_Version: 1
+          oldRealSizes: 
+          oldMinSizes: 
+          oldMaxSizes: 
+          oldSplitSize: 0
+    - rid: 6284989342400643076
+      type: {class: AudioProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.AudioProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ShowInactiveDSPChains: 0
+        m_HighlightAudibleDSPChains: 1
+        m_DSPGraphZoomFactor: 1
+        m_DSPGraphHorizontalLayout: 0
+    - rid: 6284989342400643077
+      type: {class: VideoProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.VideoProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643078
+      type: {class: PhysicsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.PhysicsProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643079
+      type: {class: Physics2DProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.Physics2DProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643080
+      type: {class: UIProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.UIProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643081
+      type: {class: UIDetailsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.UIDetailsProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643082
+      type: {class: GlobalIlluminationProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.GlobalIlluminationProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643083
+      type: {class: VirtualTexturingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.VirtualTexturingProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_VTProfilerView:
+          rid: 6284989342400643089
+    - rid: 6284989342400643084
+      type: {class: FileIOProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.FileIOProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643085
+      type: {class: AssetLoadingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.AssetLoadingProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 6284989342400643089
+      type: {class: VirtualTexturingProfilerView, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_SortAscending: 0
+        m_SortedColumn: -1
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 8
+    y: 929
+    width: 1284
+    height: 469
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1293
+    y: 81
+    width: 580
+    height: 889
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e4f8ffffbcf9ffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 10}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &24
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1293
+    y: 991
+    width: 580
+    height: 407
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders: []
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 0
+  m_StartGridSize: 16
+  m_LastFolders: []
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: U:\_GitHub\DOTSEventsStressTest-2022.3
+  m_LockTracker:
+    m_IsLocked: 1
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 3af30000
+    m_LastClickedID: 62266
+    m_ExpandedIDs: 00000000786900007a6900007c6900007e690000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000786900007a6900007c6900007e690000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 13}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 99
+--- !u!114 &25
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1638
+    y: 81
+    width: 702
+    height: 1317
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 266
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1875
+    y: 81
+    width: 832
+    height: 503
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_Spl:
+    ID: 361
+    splitterInitialOffset: 707
+    currentActiveSplitter: -1
+    realSizes:
+    - 309
+    - 103
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 412
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 2
+  m_TestListGUIs:
+  - m_Window: {fileID: 26}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[PolymorphicStructs][suite]'
+      name: PolymorphicStructs
+      fullName: PolymorphicStructs
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1013
+      uniqueId: '[EditorTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/EditorTests.dll][suite]'
+      name: EditorTests.dll
+      fullName: U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/EditorTests.dll
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[PolymorphicStructs][suite]'
+    - id: 1002
+      uniqueId: EditorTests.dll/[EditorTests][suite]
+      name: EditorTests
+      fullName: EditorTests
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1013
+      parentUniqueId: '[EditorTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/EditorTests.dll][suite]'
+    - id: 1003
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.A_ParallelWriteToStream_ParallelPollBuffers]
+      name: A_ParallelWriteToStream_ParallelPollBuffers
+      fullName: EditorTests.A_ParallelWriteToStream_ParallelPollBuffers
+      resultStatus: 1
+      duration: 0.8332477
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t5.82 ms\nMedian:\t\t6.56 ms\nMax:\t\t8.54
+        ms\nAvg:\t\t6.62 ms\nStdDev:\t\t0.55 ms\nSampleCount:\t57\nSum:\t\t377.39
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2586\u2587\u2587\u2588\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2582\u2582\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.A_ParallelWriteToStream_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"A_ParallelWriteToStream_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[5.818199999999933,5.899199999999951,5.91519999999997,5.926099999999963,5.980700000000013,6.041899999999998,6.048099999999977,6.060000000000002,6.11990000000003,6.181499999999971,6.231899999999996,6.261400000000094,6.26400000000001,6.2789000000000219,6.2812000000000129,6.303299999999979,6.319399999999973,6.331999999999994,6.341600000000028,6.360599999999977,6.390199999999993,6.393899999999974,6.406700000000001,6.4132000000000179,6.43610000000001,6.467600000000061,6.495800000000003,6.5301999999999229,6.559100000000001,6.570499999999981,6.576000000000022,6.585699999999974,6.59820000000002,6.617200000000025,6.620900000000006,6.6370000000000008,6.681899999999928,6.682999999999993,6.687600000000032,6.687600000000032,6.728600000000029,6.729600000000005,6.78000000000003,6.795100000000048,6.853599999999972,6.8799000000000209,6.920899999999989,6.945400000000035,6.967400000000055,7.038600000000002,7.292699999999968,7.35560000000001,7.553399999999954,7.815400000000011,8.08319999999992,8.102499999999992,8.542599999999993],\"Min\":5.818199999999933,\"Max\":8.542599999999993,\"Median\":6.559100000000001,\"Average\":6.620842105263156,\"StandardDeviation\":0.5516372771990364,\"Sum\":377.3879999999999}]}\r\n##performancetestruninfo2:{\"TestSuite\":\"Editmode\",\"Date\":1704374981293,\"Player\":{\"Development\":true,\"ScreenWidth\":5120,\"ScreenHeight\":1440,\"ScreenRefreshRate\":120,\"Fullscreen\":false,\"Vsync\":0,\"AntiAliasing\":0,\"Batchmode\":false,\"RenderThreadingMode\":\"GraphicsJobs\",\"GpuSkinning\":true,\"Platform\":\"WindowsEditor\",\"ColorSpace\":\"Linear\",\"AnisotropicFiltering\":\"Enable\",\"BlendWeights\":\"TwoBones\",\"GraphicsApi\":\"Direct3D11\",\"ScriptingBackend\":\"Mono2x\",\"AndroidTargetSdkVersion\":\"AndroidApiLevelAuto\",\"AndroidBuildSystem\":\"Gradle\",\"BuildTarget\":\"StandaloneWindows64\",\"StereoRenderingPath\":\"MultiPass\"},\"Hardware\":{\"OperatingSystem\":\"Windows
+        11  (10.0.22631) 64bit\",\"DeviceModel\":\"Z790 AORUS PRO X (Gigabyte Technology
+        Co., Ltd.)\",\"DeviceName\":\"CODESMILE-PC\",\"ProcessorType\":\"Intel(R)
+        Core(TM) i9-14900K\",\"ProcessorCount\":32,\"GraphicsDeviceName\":\"NVIDIA
+        GeForce GTX 1070\",\"SystemMemorySizeMB\":65366},\"Editor\":{\"Version\":\"2022.3.16f1\",\"Branch\":\"2022.3/staging\",\"Changeset\":\"d2c21f0ef2f1\",\"Date\":1702386223},\"Dependencies\":[\"com.unity.ai.navigation@1.1.5\",\"com.unity.entities@1.0.16\",\"com.unity.entities.graphics@1.0.16\",\"com.unity.ide.rider@3.0.27\",\"com.unity.ide.visualstudio@2.0.22\",\"com.unity.ide.vscode@1.2.5\",\"com.unity.performance.profile-analyzer@1.2.2\",\"com.unity.render-pipelines.universal@14.0.9\",\"com.unity.test-framework@1.4.2\",\"com.unity.test-framework.performance@3.0.3\",\"com.unity.textmeshpro@3.0.6\",\"com.unity.ugui@1.0.0\",\"com.unity.modules.ai@1.0.0\",\"com.unity.modules.androidjni@1.0.0\",\"com.unity.modules.animation@1.0.0\",\"com.unity.modules.assetbundle@1.0.0\",\"com.unity.modules.audio@1.0.0\",\"com.unity.modules.cloth@1.0.0\",\"com.unity.modules.director@1.0.0\",\"com.unity.modules.imageconversion@1.0.0\",\"com.unity.modules.imgui@1.0.0\",\"com.unity.modules.jsonserialize@1.0.0\",\"com.unity.modules.particlesystem@1.0.0\",\"com.unity.modules.physics@1.0.0\",\"com.unity.modules.physics2d@1.0.0\",\"com.unity.modules.screencapture@1.0.0\",\"com.unity.modules.terrain@1.0.0\",\"com.unity.modules.terrainphysics@1.0.0\",\"com.unity.modules.tilemap@1.0.0\",\"com.unity.modules.ui@1.0.0\",\"com.unity.modules.uielements@1.0.0\",\"com.unity.modules.umbra@1.0.0\",\"com.unity.modules.unityanalytics@1.0.0\",\"com.unity.modules.unitywebrequest@1.0.0\",\"com.unity.modules.unitywebrequestassetbundle@1.0.0\",\"com.unity.modules.unitywebrequestaudio@1.0.0\",\"com.unity.modules.unitywebrequesttexture@1.0.0\",\"com.unity.modules.unitywebrequestwww@1.0.0\",\"com.unity.modules.vehicles@1.0.0\",\"com.unity.modules.video@1.0.0\",\"com.unity.modules.vr@1.0.0\",\"com.unity.modules.wind@1.0.0\",\"com.unity.modules.xr@1.0.0\",\"com.unity.modules.subsystems@1.0.0\",\"com.unity.ext.nunit@2.0.3\",\"com.unity.mathematics@1.2.6\",\"com.unity.burst@1.8.11\",\"com.unity.render-pipelines.core@14.0.9\",\"com.unity.shadergraph@14.0.9\",\"com.unity.render-pipelines.universal-config@14.0.9\",\"com.unity.serialization@3.1.1\",\"com.unity.collections@2.1.4\",\"com.unity.nuget.mono-cecil@1.11.4\",\"com.unity.scriptablebuildpipeline@1.21.21\",\"com.unity.profiling.core@1.0.2\",\"com.unity.searcher@4.9.2\"],\"Results\":[]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1004
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.B_SingleWriteToBuffers_ParallelPollBuffers]
+      name: B_SingleWriteToBuffers_ParallelPollBuffers
+      fullName: EditorTests.B_SingleWriteToBuffers_ParallelPollBuffers
+      resultStatus: 1
+      duration: 0.5921434
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.97 ms\nMedian:\t\t5.26 ms\nMax:\t\t7.13
+        ms\nAvg:\t\t5.61 ms\nStdDev:\t\t0.73 ms\nSampleCount:\t25\nSum:\t\t140.33
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2585\u2587\u2588\u2588\u2588\u2588\r\nHistogram:\t\u2585\u2588\u2588\u2585\u2583\u2583\u2583\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.B_SingleWriteToBuffers_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"B_SingleWriteToBuffers_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.968800000000044,4.9923,5.065400000000011,5.099999999999966,5.15179999999998,5.1524,5.181600000000003,5.182100000000048,5.1976999999999979,5.223500000000001,5.227800000000002,5.230099999999993,5.2634000000000189,5.303800000000024,5.33880000000002,5.34220000000002,5.34620000000001,5.412400000000019,5.4162000000000038,6.1340000000000149,6.894599999999997,7.0035000000000029,7.009599999999978,7.062099999999987,7.131799999999998],\"Min\":4.968800000000044,\"Max\":7.131799999999998,\"Median\":5.2634000000000189,\"Average\":5.6132840000000059,\"StandardDeviation\":0.7348515706889327,\"Sum\":140.33210000000015}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1005
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers]
+      name: C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      fullName: EditorTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      resultStatus: 1
+      duration: 0.7616009
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t8.69 ms\nMedian:\t\t9.23 ms\nMax:\t\t11.49
+        ms\nAvg:\t\t9.53 ms\nStdDev:\t\t0.81 ms\nSampleCount:\t32\nSum:\t\t304.84
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2587\u2587\u2587\u2588\u2588\r\nHistogram:\t\u2584\u2586\u2588\u2584\u2582\u2582\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[8.689999999999998,8.751800000000003,8.812799999999982,8.85820000000001,8.887,8.89609999999999,8.922899999999999,8.995200000000012,9.027800000000014,9.032500000000028,9.044499999999971,9.064799999999991,9.084900000000005,9.133799999999951,9.1558,9.184699999999964,9.280100000000005,9.29140000000001,9.307299999999998,9.474400000000003,9.511199999999974,9.555700000000002,9.581000000000018,9.64870000000002,9.672200000000004,9.721100000000036,10.000299999999982,11.013499999999994,11.153099999999995,11.1832,11.419000000000012,11.485399999999999],\"Min\":8.689999999999998,\"Max\":11.485399999999999,\"Median\":9.232399999999985,\"Average\":9.526262500000002,\"StandardDeviation\":0.8050694297504731,\"Sum\":304.84040000000007}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1006
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.D_ParallelWriteToStream_SingleApplyToEntities]
+      name: D_ParallelWriteToStream_SingleApplyToEntities
+      fullName: EditorTests.D_ParallelWriteToStream_SingleApplyToEntities
+      resultStatus: 1
+      duration: 0.6403907
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t3.10 ms\nMedian:\t\t3.97 ms\nMax:\t\t4.64
+        ms\nAvg:\t\t3.90 ms\nStdDev:\t\t0.30 ms\nSampleCount:\t50\nSum:\t\t195.06
+        ms\r\nFirst samples:\t\u2581\u2581\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2586\u2586\u2586\u2586\u2588\u2588\r\nHistogram:\t\u2584\u2586\u2588\u2584\u2583\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.D_ParallelWriteToStream_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"D_ParallelWriteToStream_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.1037000000000036,3.134400000000028,3.3663999999999989,3.3997999999999708,3.4101,3.4547000000000027,3.468500000000006,3.4909999999999856,3.6077999999999976,3.675700000000006,3.7513999999999898,3.782800000000009,3.7971999999999754,3.846900000000005,3.8489000000000148,3.870399999999961,3.8736000000000105,3.9022999999999969,3.9157000000000155,3.9254999999999997,3.9489000000000376,3.954399999999964,3.961800000000011,3.967800000000011,3.9681999999999677,3.9815999999999578,3.984199999999987,3.987099999999998,3.9912999999999956,4.001700000000028,4.0077,4.026399999999967,4.027099999999962,4.034999999999997,4.0446999999999779,4.0458000000000429,4.047600000000017,4.052799999999991,4.0575000000000049,4.0627999999999819,4.074299999999994,4.07650000000001,4.0815000000000059,4.082099999999997,4.09820000000002,4.11699999999999,4.260400000000004,4.26460000000003,4.586399999999998,4.639199999999988],\"Min\":3.1037000000000036,\"Max\":4.639199999999988,\"Median\":3.9748999999999627,\"Average\":3.901227999999998,\"StandardDeviation\":0.29967507940434359,\"Sum\":195.0613999999999}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1007
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.E_ParallelWriteToStream_ParallelApplyToEntities]
+      name: E_ParallelWriteToStream_ParallelApplyToEntities
+      fullName: EditorTests.E_ParallelWriteToStream_ParallelApplyToEntities
+      resultStatus: 1
+      duration: 0.5441572
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t1.02 ms\nMedian:\t\t1.21 ms\nMax:\t\t2.04
+        ms\nAvg:\t\t1.27 ms\nStdDev:\t\t0.21 ms\nSampleCount:\t78\nSum:\t\t99.37
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2585\u2586\u2586\u2586\u2586\u2586\u2587\u2587\u2588\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2582\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.E_ParallelWriteToStream_ParallelApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"E_ParallelWriteToStream_ParallelApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[1.0234999999999844,1.0568000000000098,1.0629000000000133,1.0666999999999974,1.070699999999988,1.073500000000024,1.0741999999999906,1.0762,1.0953000000000089,1.0979000000000099,1.1024999999999637,1.113999999999976,1.120999999999981,1.1318999999999733,1.141699999999986,1.1569999999999823,1.1577999999999805,1.1598000000000184,1.160599999999988,1.162900000000036,1.1659999999999969,1.172300000000007,1.1726999999999919,1.1800999999999818,1.1844000000000108,1.1858000000000005,1.1868000000000052,1.1877999999999816,1.1932999999999936,1.195699999999988,1.1967000000000213,1.1968999999999995,1.203300000000013,1.2061999999999956,1.2072000000000003,1.2073000000000037,1.2084999999999866,1.2113999999999977,1.2116000000000043,1.2151000000000068,1.21550000000002,1.2179000000000145,1.2224000000000502,1.2251999999999726,1.2254999999999826,1.2272999999999855,1.2313000000000046,1.2321000000000027,1.2375000000000114,1.2430000000000235,1.2440999999999747,1.2449999999999762,1.2450000000000046,1.2495999999999868,1.2513999999999897,1.2587999999999796,1.2595000000000028,1.2611000000000275,1.2631999999999835,1.2763999999999954,1.288800000000009,1.3097999999999957,1.3203000000000032,1.320900000000023,1.369100000000003,1.4347999999999957,1.4834999999999923,1.4839999999999805,1.501800000000003,1.566900000000004,1.6991999999999906,1.7105999999999995,1.7270000000000039,1.7567999999999984,1.7971999999999753,1.83329999999998,1.9055999999999927,2.0360000000000015],\"Min\":1.0234999999999844,\"Max\":2.0360000000000015,\"Median\":1.2133500000000055,\"Average\":1.2740179487179467,\"StandardDeviation\":0.20883655475256228,\"Sum\":99.37339999999984}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1008
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.F_ParallelCreateEventEntities_SingleApplyToEntities]
+      name: F_ParallelCreateEventEntities_SingleApplyToEntities
+      fullName: EditorTests.F_ParallelCreateEventEntities_SingleApplyToEntities
+      resultStatus: 1
+      duration: 0.8872173
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t35.75 ms\nMedian:\t\t37.22 ms\nMax:\t\t38.52
+        ms\nAvg:\t\t37.19 ms\nStdDev:\t\t0.78 ms\nSampleCount:\t10\nSum:\t\t371.91
+        ms\r\nFirst samples:\t\u2581\u2583\u2584\u2584\u2585\u2585\u2585\u2585\u2588\u2588\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.F_ParallelCreateEventEntities_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"F_ParallelCreateEventEntities_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[35.75450000000001,36.41339999999997,36.75449999999995,36.982200000000037,37.176999999999967,37.26649999999995,37.3237,37.37520000000006,38.338300000000007,38.5222],\"Min\":35.75450000000001,\"Max\":38.5222,\"Median\":37.22174999999996,\"Average\":37.190749999999997,\"StandardDeviation\":0.7776984624518736,\"Sum\":371.9074999999999}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1009
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.G_ParallelWriteToStream_SinglePollList]
+      name: G_ParallelWriteToStream_SinglePollList
+      fullName: EditorTests.G_ParallelWriteToStream_SinglePollList
+      resultStatus: 1
+      duration: 0.7095897
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t3.51 ms\nMedian:\t\t4.05 ms\nMax:\t\t6.86
+        ms\nAvg:\t\t4.24 ms\nStdDev:\t\t0.60 ms\nSampleCount:\t61\nSum:\t\t258.34
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2586\u2588\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2583\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.G_ParallelWriteToStream_SinglePollList\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"G_ParallelWriteToStream_SinglePollList\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.505000000000024,3.6170999999999937,3.6896999999999595,3.7210000000000038,3.7315999999999578,3.758200000000045,3.7825000000000275,3.7894000000000007,3.8010000000000447,3.811499999999967,3.824299999999994,3.8303000000000226,3.851100000000031,3.858599999999967,3.866199999999992,3.878399999999999,3.894100000000037,3.8989999999999727,3.9226000000000456,3.9262999999999694,3.9628999999999907,3.964499999999987,3.9653999999999884,3.9717999999999735,3.989400000000046,4.018799999999999,4.022800000000018,4.025800000000004,4.034800000000018,4.038900000000012,4.048600000000022,4.054899999999975,4.060699999999997,4.062599999999975,4.064900000000023,4.065299999999979,4.067299999999989,4.073399999999992,4.080099999999959,4.11160000000001,4.123699999999985,4.1524,4.158900000000017,4.2117000000000079,4.2198999999999959,4.223500000000001,4.224000000000046,4.432099999999991,4.529500000000013,4.560299999999984,4.8108,4.954199999999986,4.992899999999992,5.032000000000011,5.096900000000005,5.2035999999999948,5.3218000000000249,5.343299999999999,5.533900000000017,5.712799999999987,6.857300000000009],\"Min\":3.505000000000024,\"Max\":6.857300000000009,\"Median\":4.048600000000022,\"Average\":4.235047540983608,\"StandardDeviation\":0.6009636339906102,\"Sum\":258.3379000000001}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1010
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.H_ParallelWriteToStream_SinglePollHashMap]
+      name: H_ParallelWriteToStream_SinglePollHashMap
+      fullName: EditorTests.H_ParallelWriteToStream_SinglePollHashMap
+      resultStatus: 1
+      duration: 1.1024557
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.93 ms\nMedian:\t\t5.39 ms\nMax:\t\t7.02
+        ms\nAvg:\t\t5.58 ms\nStdDev:\t\t0.55 ms\nSampleCount:\t115\nSum:\t\t641.92
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2585\u2585\u2586\u2586\u2586\u2586\u2586\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2582\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.H_ParallelWriteToStream_SinglePollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"H_ParallelWriteToStream_SinglePollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.934199999999976,4.938699999999926,4.948999999999955,4.953199999999981,4.9587999999999969,5.016400000000033,5.029699999999991,5.029999999999973,5.042100000000005,5.043399999999963,5.065199999999891,5.0837999999999969,5.0844999999999349,5.0924000000001119,5.102700000000027,5.104399999999941,5.114500000000021,5.114800000000059,5.127299999999991,5.130799999999908,5.142000000000053,5.151400000000081,5.170600000000036,5.189799999999991,5.205199999999991,5.2087999999999969,5.213200000000029,5.221700000000055,5.231300000000033,5.232200000000034,5.236699999999985,5.23720000000003,5.237400000000093,5.238399999999956,5.249500000000012,5.252299999999991,5.268100000000004,5.277800000000013,5.279599999999959,5.279700000000048,5.284800000000018,5.285000000000025,5.29849999999999,5.310900000000061,5.312199999999962,5.320300000000032,5.327699999999936,5.333100000000002,5.33319999999992,5.335799999999949,5.343600000000038,5.346900000000005,5.3519999999999758,5.358799999999974,5.362799999999993,5.386499999999955,5.387399999999957,5.393199999999979,5.395199999999932,5.395599999999945,5.399000000000001,5.400999999999954,5.40179999999998,5.41050000000007,5.422199999999975,5.423400000000015,5.4237000000000539,5.425299999999993,5.442000000000007,5.45210000000003,5.460300000000018,5.4664000000000219,5.474499999999978,5.483400000000017,5.49980000000005,5.503600000000006,5.511199999999974,5.521100000000047,5.533199999999965,5.552199999999971,5.554400000000044,5.5899,5.638599999999997,5.661200000000008,5.668600000000083,5.671600000000012,5.837600000000009,5.858599999999967,5.8596,5.981799999999993,6.032300000000021,6.106599999999958,6.179299999999955,6.257100000000008,6.273899999999969,6.283800000000042,6.288900000000012,6.308899999999994,6.337499999999977,6.3729999999999908,6.394299999999987,6.4623000000000279,6.482100000000003,6.527600000000007,6.565999999999974,6.607500000000016,6.610900000000015,6.667599999999993,6.720699999999994,6.768700000000024,6.9476999999999979,6.9483000000000179,6.948900000000037,6.9728999999999818,7.024399999999986],\"Min\":4.934199999999976,\"Max\":7.024399999999986,\"Median\":5.393199999999979,\"Average\":5.581931304347826,\"StandardDeviation\":0.5478096924972692,\"Sum\":641.9221}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1011
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.I_ParallelWriteToStream_ParallelPollHashMap]
+      name: I_ParallelWriteToStream_ParallelPollHashMap
+      fullName: EditorTests.I_ParallelWriteToStream_ParallelPollHashMap
+      resultStatus: 1
+      duration: 0.5945156
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t3.00 ms\nMedian:\t\t3.42 ms\nMax:\t\t4.27
+        ms\nAvg:\t\t3.46 ms\nStdDev:\t\t0.26 ms\nSampleCount:\t46\nSum:\t\t159.36
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2586\u2587\u2588\u2588\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2583\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.I_ParallelWriteToStream_ParallelPollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"I_ParallelWriteToStream_ParallelPollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.0009999999999765,3.009999999999991,3.0785000000000197,3.116100000000017,3.2210000000000038,3.230700000000013,3.2530999999999894,3.290899999999965,3.2982999999999835,3.3157999999999676,3.3239999999999556,3.3285999999999946,3.3343999999999598,3.3374000000000025,3.3530000000000088,3.3558000000000165,3.358600000000024,3.3670000000000188,3.3811999999999786,3.385499999999979,3.3874000000000139,3.404100000000028,3.4073000000000208,3.4228999999999987,3.4243000000000167,3.425399999999968,3.4300999999999819,3.4651000000000069,3.480199999999968,3.4875999999999864,3.5057999999999938,3.5101000000000228,3.5135999999999969,3.5430000000000065,3.5464000000000057,3.5885999999999855,3.598000000000013,3.611200000000025,3.6396000000000017,3.6425999999999876,3.697100000000006,3.7239000000000148,3.929600000000022,4.154899999999998,4.201400000000007,4.274799999999999],\"Min\":3.0009999999999765,\"Max\":4.274799999999999,\"Median\":3.4151000000000097,\"Average\":3.4642586956521725,\"StandardDeviation\":0.26496900604319326,\"Sum\":159.35589999999994}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    - id: 1012
+      uniqueId: EditorTests.dll/EditorTests/[EditorTests][EditorTests.J_SingleDirectModification]
+      name: J_SingleDirectModification
+      fullName: EditorTests.J_SingleDirectModification
+      resultStatus: 1
+      duration: 0.7724727
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.88 ms\nMedian:\t\t5.15 ms\nMax:\t\t6.47
+        ms\nAvg:\t\t5.40 ms\nStdDev:\t\t0.50 ms\nSampleCount:\t61\nSum:\t\t329.12
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2584\u2584\u2586\u2586\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2588\u2588\u2588\u2588\r\nHistogram:\t\u2583\u2586\u2588\u2584\u2582\u2583\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"EditorTests.J_SingleDirectModification\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"J_SingleDirectModification\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.880500000000012,4.9331000000000249,4.972499999999968,4.99169999999998,5.0178000000000229,5.0190000000000059,5.022800000000018,5.0283999999999768,5.030799999999999,5.032499999999999,5.049499999999995,5.0569000000000419,5.071200000000033,5.073100000000011,5.087199999999996,5.088099999999997,5.088999999999999,5.09839999999997,5.099999999999966,5.105000000000018,5.115700000000004,5.125099999999975,5.134600000000006,5.136599999999987,5.140500000000031,5.142999999999972,5.14730000000003,5.149099999999976,5.152999999999963,5.153899999999965,5.154699999999991,5.156000000000006,5.160699999999963,5.163600000000031,5.171199999999999,5.172799999999995,5.17330000000004,5.1749000000000369,5.175799999999981,5.177399999999977,5.198599999999999,5.206100000000021,5.206999999999994,5.258899999999983,5.424199999999985,5.460399999999993,5.675299999999993,6.053300000000007,6.126900000000035,6.178899999999999,6.186700000000002,6.2029999999999749,6.2065000000000059,6.281000000000006,6.286699999999996,6.302500000000009,6.303200000000004,6.3718000000000079,6.431499999999971,6.459699999999998,6.4702000000000059],\"Min\":4.880500000000012,\"Max\":6.4702000000000059,\"Median\":5.154699999999991,\"Average\":5.395395081967213,\"StandardDeviation\":0.4970700308302481,\"Sum\":329.1191}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1002
+      parentUniqueId: EditorTests.dll/[EditorTests][suite]
+    m_ResultText: EditorTests (10 tests) (0.000s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 4748568c
+      m_LastClickedID: -1940502457
+      m_ExpandedIDs: 930792844748568c6a694c37ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Performance
+      - Uncategorized
+  - m_Window: {fileID: 26}
+    m_NewResultList:
+    - id: 1019
+      uniqueId: '[PolymorphicStructs][suite]'
+      name: PolymorphicStructs
+      fullName: PolymorphicStructs
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1031
+      uniqueId: '[RuntimeTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll][suite]'
+      name: RuntimeTests.dll
+      fullName: U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1019
+      parentUniqueId: '[PolymorphicStructs][suite]'
+    - id: 1020
+      uniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+      name: RuntimeTests
+      fullName: RuntimeTests
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1031
+      parentUniqueId: '[RuntimeTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll][suite]'
+    - id: 1021
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers]
+      name: A_ParallelWriteToStream_ParallelPollBuffers
+      fullName: RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers
+      resultStatus: 1
+      duration: 1.076788
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t5.91 ms\nMedian:\t\t6.46 ms\nMax:\t\t8.11
+        ms\nAvg:\t\t6.53 ms\nStdDev:\t\t0.45 ms\nSampleCount:\t59\nSum:\t\t385.53
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2585\u2585\u2585\u2587\u2588\r\nHistogram:\t\u2584\u2586\u2587\u2588\u2583\u2584\u2581\u2581\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"A_ParallelWriteToStream_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[5.909400000000005,5.919200000000046,5.929300000000012,5.970499999999959,5.977499999999964,5.999000000000024,6.029699999999934,6.109300000000076,6.1141999999999829,6.129400000000032,6.1317000000000239,6.140700000000038,6.143199999999979,6.166299999999978,6.193199999999933,6.244700000000023,6.260999999999967,6.2642999999999919,6.279700000000048,6.289099999999962,6.297400000000039,6.310399999999959,6.312200000000075,6.323699999999974,6.369200000000035,6.377900000000068,6.393899999999974,6.446899999999914,6.455300000000079,6.462299999999971,6.5195999999999689,6.5475999999999889,6.551600000000008,6.567800000000034,6.573399999999992,6.581400000000031,6.602100000000064,6.627399999999966,6.634299999999939,6.6410999999999948,6.649900000000002,6.65179999999998,6.655599999999993,6.671899999999937,6.721400000000017,6.77679999999998,6.805100000000039,6.8618999999999918,6.872299999999996,6.92960000000005,7.032500000000027,7.079499999999996,7.090100000000007,7.166499999999985,7.2263000000000379,7.237500000000011,7.2812000000000129,7.917100000000005,8.105000000000019],\"Min\":5.909400000000005,\"Max\":8.105000000000019,\"Median\":6.462299999999971,\"Average\":6.534388135593223,\"StandardDeviation\":0.4510641083695736,\"Sum\":385.52890000000016}]}\r\n##performancetestruninfo2:{\"TestSuite\":\"Playmode\",\"Date\":1704375121818,\"Player\":{\"Development\":true,\"ScreenWidth\":5120,\"ScreenHeight\":1440,\"ScreenRefreshRate\":120,\"Fullscreen\":false,\"Vsync\":0,\"AntiAliasing\":0,\"Batchmode\":false,\"RenderThreadingMode\":\"GraphicsJobs\",\"GpuSkinning\":true,\"Platform\":\"WindowsEditor\",\"ColorSpace\":\"Linear\",\"AnisotropicFiltering\":\"Enable\",\"BlendWeights\":\"TwoBones\",\"GraphicsApi\":\"Direct3D11\",\"ScriptingBackend\":\"Mono2x\",\"AndroidTargetSdkVersion\":\"AndroidApiLevelAuto\",\"AndroidBuildSystem\":\"Gradle\",\"BuildTarget\":\"StandaloneWindows64\",\"StereoRenderingPath\":\"MultiPass\"},\"Hardware\":{\"OperatingSystem\":\"Windows
+        11  (10.0.22631) 64bit\",\"DeviceModel\":\"Z790 AORUS PRO X (Gigabyte Technology
+        Co., Ltd.)\",\"DeviceName\":\"CODESMILE-PC\",\"ProcessorType\":\"Intel(R)
+        Core(TM) i9-14900K\",\"ProcessorCount\":32,\"GraphicsDeviceName\":\"NVIDIA
+        GeForce GTX 1070\",\"SystemMemorySizeMB\":65366},\"Editor\":{\"Version\":\"2022.3.16f1\",\"Branch\":\"2022.3/staging\",\"Changeset\":\"d2c21f0ef2f1\",\"Date\":1702386223},\"Dependencies\":[\"com.unity.ai.navigation@1.1.5\",\"com.unity.entities@1.0.16\",\"com.unity.entities.graphics@1.0.16\",\"com.unity.ide.rider@3.0.27\",\"com.unity.ide.visualstudio@2.0.22\",\"com.unity.ide.vscode@1.2.5\",\"com.unity.performance.profile-analyzer@1.2.2\",\"com.unity.render-pipelines.universal@14.0.9\",\"com.unity.test-framework@1.4.2\",\"com.unity.test-framework.performance@3.0.3\",\"com.unity.textmeshpro@3.0.6\",\"com.unity.ugui@1.0.0\",\"com.unity.modules.ai@1.0.0\",\"com.unity.modules.androidjni@1.0.0\",\"com.unity.modules.animation@1.0.0\",\"com.unity.modules.assetbundle@1.0.0\",\"com.unity.modules.audio@1.0.0\",\"com.unity.modules.cloth@1.0.0\",\"com.unity.modules.director@1.0.0\",\"com.unity.modules.imageconversion@1.0.0\",\"com.unity.modules.imgui@1.0.0\",\"com.unity.modules.jsonserialize@1.0.0\",\"com.unity.modules.particlesystem@1.0.0\",\"com.unity.modules.physics@1.0.0\",\"com.unity.modules.physics2d@1.0.0\",\"com.unity.modules.screencapture@1.0.0\",\"com.unity.modules.terrain@1.0.0\",\"com.unity.modules.terrainphysics@1.0.0\",\"com.unity.modules.tilemap@1.0.0\",\"com.unity.modules.ui@1.0.0\",\"com.unity.modules.uielements@1.0.0\",\"com.unity.modules.umbra@1.0.0\",\"com.unity.modules.unityanalytics@1.0.0\",\"com.unity.modules.unitywebrequest@1.0.0\",\"com.unity.modules.unitywebrequestassetbundle@1.0.0\",\"com.unity.modules.unitywebrequestaudio@1.0.0\",\"com.unity.modules.unitywebrequesttexture@1.0.0\",\"com.unity.modules.unitywebrequestwww@1.0.0\",\"com.unity.modules.vehicles@1.0.0\",\"com.unity.modules.video@1.0.0\",\"com.unity.modules.vr@1.0.0\",\"com.unity.modules.wind@1.0.0\",\"com.unity.modules.xr@1.0.0\",\"com.unity.modules.subsystems@1.0.0\",\"com.unity.ext.nunit@2.0.3\",\"com.unity.mathematics@1.2.6\",\"com.unity.burst@1.8.11\",\"com.unity.render-pipelines.core@14.0.9\",\"com.unity.shadergraph@14.0.9\",\"com.unity.render-pipelines.universal-config@14.0.9\",\"com.unity.serialization@3.1.1\",\"com.unity.collections@2.1.4\",\"com.unity.nuget.mono-cecil@1.11.4\",\"com.unity.scriptablebuildpipeline@1.21.21\",\"com.unity.profiling.core@1.0.2\",\"com.unity.searcher@4.9.2\"],\"Results\":[]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1022
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers]
+      name: B_SingleWriteToBuffers_ParallelPollBuffers
+      fullName: RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers
+      resultStatus: 1
+      duration: 0.7967432
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.92 ms\nMedian:\t\t5.14 ms\nMax:\t\t7.09
+        ms\nAvg:\t\t5.51 ms\nStdDev:\t\t0.71 ms\nSampleCount:\t29\nSum:\t\t159.89
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2585\u2587\u2588\u2588\u2588\u2588\r\nHistogram:\t\u2586\u2588\u2585\u2586\u2582\u2583\u2582\u2581\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"B_SingleWriteToBuffers_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.923099999999977,4.9862999999999719,5.027600000000007,5.03449999999998,5.044599999999946,5.059999999999945,5.087400000000002,5.0908000000000019,5.096900000000005,5.106100000000026,5.107300000000009,5.1096,5.123100000000022,5.127700000000004,5.13760000000002,5.163799999999981,5.251199999999983,5.261599999999987,5.331699999999955,5.341700000000003,5.3624999999999549,5.4290000000000309,5.631299999999953,6.151900000000012,6.751899999999978,6.98539999999997,7.026299999999992,7.0493999999999918,7.094499999999982],\"Min\":4.923099999999977,\"Max\":7.094499999999982,\"Median\":5.13760000000002,\"Average\":5.5136137931034379,\"StandardDeviation\":0.7096321998895568,\"Sum\":159.8947999999997}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1023
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers]
+      name: C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      fullName: RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      resultStatus: 1
+      duration: 0.734026
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t8.85 ms\nMedian:\t\t9.23 ms\nMax:\t\t9.35
+        ms\nAvg:\t\t9.16 ms\nStdDev:\t\t0.17 ms\nSampleCount:\t10\nSum:\t\t91.59
+        ms\r\nFirst samples:\t\u2581\u2583\u2583\u2585\u2586\u2587\u2587\u2587\u2588\u2588\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"C_ParallelWriteToBuffersECB_ParallelPollBuffers\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[8.845799999999997,8.95739999999995,8.976600000000019,9.125900000000002,9.20369999999997,9.248299999999972,9.258700000000033,9.283000000000016,9.339200000000006,9.34680000000003],\"Min\":8.845799999999997,\"Max\":9.34680000000003,\"Median\":9.22599999999997,\"Average\":9.158539999999999,\"StandardDeviation\":0.16617147890057155,\"Sum\":91.58539999999999}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1024
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities]
+      name: D_ParallelWriteToStream_SingleApplyToEntities
+      fullName: RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities
+      resultStatus: 1
+      duration: 1.1669652
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t2.91 ms\nMedian:\t\t3.29 ms\nMax:\t\t4.31
+        ms\nAvg:\t\t3.42 ms\nStdDev:\t\t0.34 ms\nSampleCount:\t157\nSum:\t\t537.70
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\r\nHistogram:\t\u2583\u2586\u2588\u2585\u2582\u2582\u2583\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"D_ParallelWriteToStream_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[2.9128999999999225,2.934400000000096,2.9845000000000256,3.0047000000000709,3.033800000000042,3.033999999999992,3.0352000000000318,3.038599999999974,3.0587999999999058,3.0756999999999836,3.0872000000000527,3.088100000000054,3.088899999999967,3.0962999999999285,3.1058000000000449,3.1072000000000346,3.111499999999978,3.113400000000013,3.115000000000009,3.119399999999928,3.12379999999996,3.129799999999932,3.1358000000000176,3.1404999999999747,3.144999999999982,3.1468999999999598,3.1526000000000069,3.159999999999968,3.16070000000002,3.16719999999998,3.1707999999999858,3.1736000000000219,3.1786999999999354,3.180500000000052,3.1812999999999649,3.191400000000044,3.193200000000047,3.1935999999999469,3.194400000000087,3.1976999999999409,3.200800000000072,3.2047999999999776,3.2058999999999289,3.20679999999993,3.207300000000032,3.2080000000000838,3.20920000000001,3.210199999999986,3.2105999999999996,3.212099999999964,3.217900000000043,3.2182999999999994,3.2195999999999005,3.220300000000009,3.2210999999999787,3.2261000000000878,3.229400000000055,3.232499999999959,3.2428999999999634,3.2432000000000018,3.2432000000000018,3.244699999999966,3.247500000000059,3.255700000000047,3.257000000000062,3.2571000000000369,3.266399999999976,3.2667000000000145,3.268100000000004,3.2684999999999606,3.268599999999992,3.27109999999999,3.277500000000032,3.278700000000015,3.2794999999999847,3.2831999999999654,3.2848000000000185,3.286699999999996,3.2883000000000495,3.292899999999918,3.2940999999999578,3.296199999999999,3.302099999999996,3.306600000000003,3.3075000000000047,3.3088000000000195,3.31230000000005,3.314100000000053,3.3174000000000207,3.3175999999999705,3.318300000000022,3.3204999999999247,3.332899999999995,3.3342999999999849,3.342999999999961,3.3473000000000185,3.3496999999999845,3.354000000000042,3.3583999999999607,3.3595000000000256,3.372799999999984,3.3758000000000267,3.379700000000014,3.389099999999985,3.390299999999911,3.3946999999999436,3.4329999999999929,3.4447999999999867,3.4599999999999797,3.4612000000000195,3.4664000000000216,3.502200000000016,3.508199999999988,3.5272999999999685,3.584899999999948,3.589900000000057,3.5996000000000096,3.6113000000000285,3.6976000000000228,3.720799999999997,3.7210999999999787,3.769700000000057,3.782800000000009,3.808300000000031,3.816699999999969,3.8245000000000006,3.841200000000015,3.844600000000014,3.8467999999999735,3.8506000000000428,3.8653000000000476,3.8688000000000217,3.9069999999999824,3.9081999999999654,3.9131999999999609,3.917699999999968,3.938299999999913,3.9483999999999925,3.9524000000000116,3.963199999999972,3.964999999999975,3.9945000000000165,3.994799999999998,4.0118000000001079,4.048600000000022,4.05540000000002,4.0586999999999879,4.0704000000000069,4.074999999999989,4.080600000000004,4.094600000000014,4.129599999999982,4.185099999999977,4.20029999999997,4.2613999999999809,4.280900000000031,4.307099999999991],\"Min\":2.9128999999999225,\"Max\":4.307099999999991,\"Median\":3.2883000000000495,\"Average\":3.424859235668788,\"StandardDeviation\":0.33888102847354636,\"Sum\":537.7028999999998}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1025
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities]
+      name: E_ParallelWriteToStream_ParallelApplyToEntities
+      fullName: RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities
+      resultStatus: 1
+      duration: 0.8017116
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t0.93 ms\nMedian:\t\t1.14 ms\nMax:\t\t1.84
+        ms\nAvg:\t\t1.16 ms\nStdDev:\t\t0.14 ms\nSampleCount:\t140\nSum:\t\t163.08
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\r\nHistogram:\t\u2582\u2586\u2588\u2585\u2583\u2582\u2582\u2582\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"E_ParallelWriteToStream_ParallelApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[0.9261000000000195,0.9571000000000254,0.9670999999999594,0.9812000000000012,0.9823000000000093,0.9894999999999641,0.999499999999955,1.001199999999983,1.00649999999996,1.0095999999999777,1.0199999999999819,1.0205000000000269,1.023399999999981,1.0255999999999972,1.0278999999999883,1.0294000000000097,1.0308999999999742,1.0323000000000207,1.0351999999999749,1.0365999999999645,1.0372999999999593,1.0399999999999637,1.040800000000047,1.0454000000000293,1.0457000000000108,1.0485000000000469,1.0507000000000062,1.0507000000000062,1.0518000000000143,1.0568000000000098,1.0586000000000127,1.0640000000000214,1.0640000000000214,1.0640999999999963,1.072999999999979,1.074200000000019,1.0742999999999939,1.0792000000000144,1.0822000000000003,1.0826000000000136,1.0854999999999678,1.0856999999999744,1.0921999999999912,1.0994999999999778,1.1009000000000243,1.101600000000019,1.1036999999999467,1.1043999999999983,1.1058000000000448,1.109899999999982,1.1114999999999782,1.1118000000000166,1.1126999999999612,1.1128999999999679,1.1136000000000195,1.1143999999999892,1.1148999999999774,1.1154999999999973,1.1170000000000187,1.1194999999999596,1.1233000000000289,1.1247000000000185,1.12560000000002,1.1272000000000162,1.129099999999994,1.130899999999997,1.1315999999999918,1.1322999999999866,1.1379999999999769,1.1385999999999968,1.13900000000001,1.1404999999999746,1.140700000000038,1.1414999999999509,1.1418999999999642,1.1447000000000003,1.1474000000000047,1.1478999999999929,1.151899999999955,1.1528999999999883,1.1539000000000215,1.1544000000000097,1.1546000000000163,1.155900000000031,1.1580000000000155,1.1587000000000103,1.162999999999954,1.1645999999999504,1.1687000000000012,1.172300000000007,1.1727999999999952,1.1830000000000496,1.1831000000000245,1.1832999999999743,1.1843999999999824,1.185100000000034,1.1853999999999588,1.1890999999999963,1.1932999999999652,1.1970000000000028,1.197400000000016,1.1976000000000227,1.2069000000000188,1.2092000000000099,1.211999999999989,1.2165999999999713,1.220200000000034,1.2221999999999867,1.2221999999999867,1.2343000000000189,1.2345000000000255,1.239500000000021,1.2413999999999988,1.2427000000000135,1.2624000000000138,1.2624000000000138,1.271599999999978,1.2801000000000045,1.2855000000000132,1.2886000000000309,1.296199999999999,1.3009000000000129,1.3211000000000013,1.321300000000008,1.3229000000000042,1.3231999999999858,1.3291999999999576,1.3420999999999595,1.3448999999999956,1.3793000000000007,1.3817999999999984,1.3973000000000298,1.4183999999999629,1.4817999999999643,1.4874999999999546,1.5639999999999646,1.577699999999993,1.591700000000003,1.6831999999999994,1.8419000000000097],\"Min\":0.9261000000000195,\"Max\":1.8419000000000097,\"Median\":1.1388000000000034,\"Average\":1.16487714285714,\"StandardDeviation\":0.14262640926703577,\"Sum\":163.08279999999963}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1026
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities]
+      name: F_ParallelCreateEventEntities_SingleApplyToEntities
+      fullName: RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities
+      resultStatus: 1
+      duration: 1.5454906
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t76.73 ms\nMedian:\t\t77.40 ms\nMax:\t\t118.11
+        ms\nAvg:\t\t84.02 ms\nStdDev:\t\t13.52 ms\nSampleCount:\t9\nSum:\t\t756.20
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2584\u2588\r\n(not
+        enough samples for histogram)\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"F_ParallelCreateEventEntities_SingleApplyToEntities\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[76.73149999999998,76.78980000000002,77.1327,77.13429999999994,77.39819999999998,77.69330000000002,78.28840000000003,96.91570000000002,118.11479999999995],\"Min\":76.73149999999998,\"Max\":118.11479999999995,\"Median\":77.39819999999998,\"Average\":84.02207777777777,\"StandardDeviation\":13.522519585391017,\"Sum\":756.1986999999999}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1027
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.G_ParallelWriteToStream_SinglePollList]
+      name: G_ParallelWriteToStream_SinglePollList
+      fullName: RuntimeTests.G_ParallelWriteToStream_SinglePollList
+      resultStatus: 1
+      duration: 1.1238495
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t3.57 ms\nMedian:\t\t4.05 ms\nMax:\t\t5.69
+        ms\nAvg:\t\t4.26 ms\nStdDev:\t\t0.53 ms\nSampleCount:\t115\nSum:\t\t490.00
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2585\u2585\u2585\u2585\u2585\u2585\u2586\u2586\u2586\u2586\u2586\u2586\r\nHistogram:\t\u2582\u2585\u2588\u2584\u2582\u2582\u2582\u2582\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.G_ParallelWriteToStream_SinglePollList\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"G_ParallelWriteToStream_SinglePollList\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[3.5738999999999807,3.6363000000000058,3.6561000000000378,3.658900000000017,3.7007999999999585,3.7229999999999565,3.729600000000005,3.7350000000000138,3.754000000000019,3.790100000000052,3.805099999999925,3.8220000000000029,3.823099999999954,3.8315999999999805,3.8378000000000158,3.8490000000000466,3.8537000000000036,3.8554000000000316,3.86160000000001,3.865199999999959,3.8896000000000869,3.9022999999999685,3.905899999999974,3.906099999999924,3.9104999999999565,3.9329999999999929,3.933499999999981,3.9347999999999958,3.9381000000000769,3.9402999999999794,3.9612999999999376,3.9651999999999818,3.966600000000085,3.9669000000000098,3.9692999999999758,3.9703000000000658,3.97079999999994,3.971499999999992,3.971499999999992,3.9741000000000215,3.980899999999906,3.99350000000004,3.997099999999932,3.999400000000037,4.018599999999992,4.019799999999975,4.020600000000059,4.028800000000047,4.0330000000000159,4.03670000000011,4.0376999999999729,4.039200000000051,4.040899999999965,4.0429000000000319,4.043099999999981,4.0471,4.047200000000089,4.049699999999916,4.055099999999982,4.05740000000003,4.065800000000081,4.065899999999999,4.067600000000084,4.080500000000029,4.088600000000042,4.088799999999992,4.08929999999998,4.091799999999978,4.094100000000026,4.101099999999974,4.101600000000076,4.114800000000059,4.115000000000009,4.115499999999997,4.128500000000031,4.1363999999999809,4.136900000000026,4.142699999999991,4.150800000000004,4.150800000000004,4.179899999999975,4.182799999999929,4.188599999999951,4.193399999999997,4.217400000000055,4.231899999999996,4.421000000000049,4.4850999999999889,4.708700000000022,4.723999999999933,4.7316000000000149,4.815800000000081,4.861499999999978,4.928699999999992,4.97180000000003,4.994599999999991,5.05720000000008,5.06129999999996,5.09129999999999,5.098299999999995,5.119600000000105,5.129699999999957,5.137900000000059,5.138699999999972,5.1527999999999569,5.228799999999978,5.236599999999953,5.273400000000038,5.299699999999973,5.303299999999979,5.404300000000035,5.509999999999991,5.629799999999989,5.638599999999997,5.689300000000003],\"Min\":3.5738999999999807,\"Max\":5.689300000000003,\"Median\":4.049699999999916,\"Average\":4.260838260869568,\"StandardDeviation\":0.5254092812246233,\"Sum\":489.9964000000004}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1028
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap]
+      name: H_ParallelWriteToStream_SinglePollHashMap
+      fullName: RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap
+      resultStatus: 1
+      duration: 0.9460657
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.82 ms\nMedian:\t\t5.46 ms\nMax:\t\t7.22
+        ms\nAvg:\t\t5.68 ms\nStdDev:\t\t0.59 ms\nSampleCount:\t55\nSum:\t\t312.14
+        ms\r\nFirst samples:\t\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2586\u2586\u2586\u2586\u2586\u2586\u2586\u2587\u2587\u2587\u2588\u2588\r\nHistogram:\t\u2582\u2585\u2588\u2584\u2582\u2582\u2582\u2582\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"H_ParallelWriteToStream_SinglePollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.81880000000001,5.0452000000000229,5.063599999999951,5.068899999999985,5.1059999999999949,5.1422000000000029,5.227499999999964,5.249600000000044,5.267400000000009,5.269300000000044,5.2871000000000099,5.301500000000033,5.305300000000045,5.3215000000000149,5.351199999999949,5.3519000000000009,5.358200000000011,5.36669999999998,5.371399999999994,5.380300000000034,5.380699999999933,5.40360000000004,5.404999999999973,5.405899999999974,5.408900000000017,5.43610000000001,5.446100000000001,5.460000000000036,5.4687000000000129,5.4751999999999729,5.476699999999937,5.503900000000044,5.504099999999994,5.527699999999982,5.531700000000001,5.540899999999965,5.548099999999977,5.562700000000007,5.578899999999976,5.595899999999972,5.677999999999997,5.782199999999989,5.81880000000001,6.406400000000019,6.426600000000008,6.491600000000005,6.5586999999999879,6.5797000000000029,6.611300000000028,6.65930000000003,6.728499999999997,6.812599999999975,6.880899999999997,7.163799999999981,7.223000000000013],\"Min\":4.81880000000001,\"Max\":7.223000000000013,\"Median\":5.460000000000036,\"Average\":5.6751963636363629,\"StandardDeviation\":0.5855432796560935,\"Sum\":312.13579999999998}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1029
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap]
+      name: I_ParallelWriteToStream_ParallelPollHashMap
+      fullName: RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap
+      resultStatus: 1
+      duration: 0.7653704
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t2.94 ms\nMedian:\t\t3.38 ms\nMax:\t\t4.18
+        ms\nAvg:\t\t3.43 ms\nStdDev:\t\t0.26 ms\nSampleCount:\t38\nSum:\t\t130.22
+        ms\r\nFirst samples:\t\u2581\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2584\u2585\u2585\u2585\u2585\u2586\u2587\u2588\u2588\r\nHistogram:\t\u2582\u2585\u2588\u2584\u2582\u2582\u2582\u2582\u2581\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"I_ParallelWriteToStream_ParallelPollHashMap\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[2.9388999999999898,3.070600000000013,3.1293000000000008,3.131800000000055,3.1739000000000034,3.2509000000000016,3.259299999999996,3.2748000000000276,3.2837000000000104,3.3006000000000315,3.303200000000004,3.321399999999983,3.326599999999985,3.3356999999999745,3.346499999999992,3.346900000000005,3.3500999999999978,3.3589000000000057,3.368499999999983,3.383800000000008,3.38839999999999,3.4017000000000054,3.4027000000000386,3.4144000000000007,3.4372999999999935,3.4488999999999807,3.464499999999987,3.4646999999999936,3.470300000000009,3.4931000000000269,3.568899999999985,3.6019999999999756,3.6404999999999747,3.6410999999999946,3.844699999999989,3.928699999999992,4.175599999999974,4.177699999999959],\"Min\":2.9388999999999898,\"Max\":4.177699999999959,\"Median\":3.3761499999999957,\"Average\":3.42685789473684,\"StandardDeviation\":0.25661652183710539,\"Sum\":130.22059999999994}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1030
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.J_SingleDirectModification]
+      name: J_SingleDirectModification
+      fullName: RuntimeTests.J_SingleDirectModification
+      resultStatus: 1
+      duration: 0.9951592
+      messages: 
+      output: "Time in Milliseconds\nMin:\t\t4.81 ms\nMedian:\t\t5.05 ms\nMax:\t\t6.33
+        ms\nAvg:\t\t5.29 ms\nStdDev:\t\t0.49 ms\nSampleCount:\t69\nSum:\t\t364.75
+        ms\r\nFirst samples:\t\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2581\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2583\u2585\u2586\u2586\u2586\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2588\u2588\u2588\u2588\u2588\u2588\r\nHistogram:\t\u2582\u2585\u2588\u2584\u2582\u2582\u2582\u2582\u2582\u2581\r\n\r\n\r\n##performancetestresult2:{\"Name\":\"RuntimeTests.J_SingleDirectModification\",\"ClassName\":\"RuntimeTests\",\"MethodName\":\"J_SingleDirectModification\",\"Version\":\"1\",\"Categories\":[\"Performance\"],\"SampleGroups\":[{\"Name\":\"Time\",\"Unit\":2,\"IncreaseIsBetter\":false,\"Samples\":[4.812599999999975,4.858100000000036,4.863999999999976,4.883500000000026,4.890600000000063,4.891300000000001,4.909600000000069,4.9109999999999449,4.914799999999957,4.915300000000002,4.919199999999989,4.919499999999971,4.929100000000062,4.938200000000052,4.940999999999974,4.948500000000024,4.949200000000019,4.9646999999999938,4.96530000000007,4.9728000000000069,4.985000000000014,4.986699999999985,4.9891999999999829,4.997500000000059,5.000399999999956,5.002299999999991,5.011599999999987,5.015600000000063,5.015800000000013,5.025800000000004,5.036600000000021,5.038100000000043,5.039899999999989,5.041699999999992,5.051700000000096,5.0552000000000139,5.057600000000036,5.0593000000000079,5.077500000000043,5.079599999999971,5.100399999999922,5.103500000000054,5.126899999999978,5.13110000000006,5.150999999999954,5.155799999999999,5.15829999999994,5.1667999999999669,5.173099999999977,5.191699999999969,5.215900000000033,5.248699999999985,5.674200000000042,5.805499999999995,5.907800000000009,5.931899999999928,6.0849000000000619,6.09190000000001,6.138599999999997,6.145000000000039,6.155399999999986,6.182600000000036,6.199400000000026,6.245300000000043,6.246600000000001,6.252499999999998,6.262099999999975,6.312099999999987,6.328300000000013],\"Min\":4.812599999999975,\"Max\":6.328300000000013,\"Median\":5.051700000000096,\"Average\":5.28627101449276,\"StandardDeviation\":0.49019226103951177,\"Sum\":364.75270000000048}]}\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1020
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    m_ResultText: RuntimeTests (10 tests) (0.000s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: ff407c83
+      m_LastClickedID: -2089008897
+      m_ExpandedIDs: ff407c836a694c3797707447ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Performance
+      - Uncategorized
+  - m_Window: {fileID: 26}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[PolymorphicStructs][suite]'
+      name: PolymorphicStructs
+      fullName: PolymorphicStructs
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1013
+      uniqueId: '[RuntimeTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll][suite]'
+      name: RuntimeTests.dll
+      fullName: U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[PolymorphicStructs][suite]'
+    - id: 1002
+      uniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+      name: RuntimeTests
+      fullName: RuntimeTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1013
+      parentUniqueId: '[RuntimeTests][U:/_GitHub/DOTSEventsStressTest-2022.3/Library/ScriptAssemblies/RuntimeTests.dll][suite]'
+    - id: 1017
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers]
+      name: A_ParallelWriteToStream_ParallelPollBuffers
+      fullName: RuntimeTests.A_ParallelWriteToStream_ParallelPollBuffers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1018
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers]
+      name: B_SingleWriteToBuffers_ParallelPollBuffers
+      fullName: RuntimeTests.B_SingleWriteToBuffers_ParallelPollBuffers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1019
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers]
+      name: C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      fullName: RuntimeTests.C_ParallelWriteToBuffersECB_ParallelPollBuffers
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1020
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities]
+      name: D_ParallelWriteToStream_SingleApplyToEntities
+      fullName: RuntimeTests.D_ParallelWriteToStream_SingleApplyToEntities
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1021
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities]
+      name: E_ParallelWriteToStream_ParallelApplyToEntities
+      fullName: RuntimeTests.E_ParallelWriteToStream_ParallelApplyToEntities
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1022
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities]
+      name: F_ParallelCreateEventEntities_SingleApplyToEntities
+      fullName: RuntimeTests.F_ParallelCreateEventEntities_SingleApplyToEntities
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1023
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.G_ParallelWriteToStream_SinglePollList]
+      name: G_ParallelWriteToStream_SinglePollList
+      fullName: RuntimeTests.G_ParallelWriteToStream_SinglePollList
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1024
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap]
+      name: H_ParallelWriteToStream_SinglePollHashMap
+      fullName: RuntimeTests.H_ParallelWriteToStream_SinglePollHashMap
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1025
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap]
+      name: I_ParallelWriteToStream_ParallelPollHashMap
+      fullName: RuntimeTests.I_ParallelWriteToStream_ParallelPollHashMap
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    - id: 1026
+      uniqueId: RuntimeTests.dll/RuntimeTests/[RuntimeTests][RuntimeTests.J_SingleDirectModification]
+      name: J_SingleDirectModification
+      fullName: RuntimeTests.J_SingleDirectModification
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Performance
+      parentId: 1016
+      parentUniqueId: RuntimeTests.dll/[RuntimeTests][suite]
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: ff407c836a694c3797707447ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Performance
+      - Uncategorized

@@ -13,7 +13,6 @@
         "UnityEditor.TestRunner"
     ],
     "includePlatforms": [
-        "Editor"
     ],
     "excludePlatforms": [],
     "allowUnsafeCode": true,

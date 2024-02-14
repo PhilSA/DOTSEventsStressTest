@@ -9,20 +9,20 @@ public partial class B_SingleWriteToBuffers_ParallelPollBuffers_System : SystemB
 {
     protected override void OnUpdate()
     {
-        if (!HasSingleton<EventStressTest>())
+        if (!SystemAPI.HasSingleton<EventStressTest>())
             return;
 
-        if (GetSingleton<EventStressTest>().EventType != EventType.B_SingleWriteToBuffers_ParallelPollBuffers)
+        if (SystemAPI.GetSingleton<EventStressTest>().EventType != EventType.B_SingleWriteToBuffers_ParallelPollBuffers)
             return;
 
         EntityQuery healthsQuery = GetEntityQuery(typeof(Health), typeof(DamageEvent));
         EntityQuery damageBuffersQuery = GetEntityQuery(typeof(DamageEvent));
 
-        BufferFromEntity<DamageEvent> damageEventFromEntity = GetBufferFromEntity<DamageEvent>();
+        BufferLookup<DamageEvent> damageEventFromEntity = GetBufferLookup<DamageEvent>();
 
         Dependency = Entities.ForEach((Entity entity, in Damager damager) =>
         {
-            if(damageEventFromEntity.HasComponent(damager.Target))
+            if(damageEventFromEntity.HasBuffer(damager.Target))
             {
                 DynamicBuffer<DamageEvent> damageEventBuffer = damageEventFromEntity[damager.Target];
                 damageEventBuffer.Add(new DamageEvent { Source = entity, Value = damager.Damage });
